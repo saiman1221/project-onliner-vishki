@@ -1,0 +1,125 @@
+.card{
+    width: 370px;
+    height: 570px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0 4px 40px rgba(0, 52, 95, 0.05);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.info{
+
+}
+
+.info_img{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.size_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 43px;
+}
+
+.size_button{
+    background: #DCDCDC;
+    border-radius: 50px;
+    padding: 7px 0;
+    width: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.size_button:hover{
+    background: #397AB2;
+    color: #fff;
+}
+
+.info h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 7px;
+    padding: 0 43px;
+}
+
+.info .comments{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+    padding: 0 43px;
+
+}
+
+.card ul{
+    list-style: none;
+    padding: 0 43px;
+
+}
+
+.card li{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #00345F;
+}
+
+.ps{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #00345F;
+    padding-left: 43px;
+}
+
+.button{
+    border: 1px solid #F3A242;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding: 10px 0;
+    background: none;
+    cursor: pointer;
+    width: 284px;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+.button:hover{
+    background: #FFB31E;
+}
