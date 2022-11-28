@@ -28,9 +28,15 @@
     font-size: 16px;
     line-height: 20px;
     color: #001728;
-    border: none;
     margin-bottom: 205px;
     cursor: pointer;
+    border: 2px solid #E39C13;
+    transition: 0.4s;
+}
+
+.main_screen .button:hover{
+    background: none;
+    color: #fff;
 }
 
 .cards{

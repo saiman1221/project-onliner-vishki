@@ -1,0 +1,52 @@
+.manual h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 112px;
+}
+
+.manual .cards{
+
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+    gap: 66px;
+    border-radius: 10px;
+    margin-bottom: 130px;
+}
+
+.card .number{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    background: linear-gradient(125.19deg, #1E3C72 -0.67%, rgba(0, 83, 153, 0.94) 103.93%, #00345F 123.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-75px);
+}
+
+.card .text{
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.card img{
+    margin: 55px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card:nth-child(2) img{
+    margin-bottom: 55px;
+}
