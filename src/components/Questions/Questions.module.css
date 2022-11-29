@@ -1,0 +1,24 @@
+.questions{
+    margin-bottom: 120px;
+}
+
+.questions h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.questions_content{
+    padding: 30px;
+    margin-left: 25px;
+    border-left: 1px solid #303030;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+

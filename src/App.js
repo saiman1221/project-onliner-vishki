@@ -6,6 +6,7 @@ import {SpecificationsTable} from "./components/SpecificationsTable/Specificatio
 import {Benefits} from "./components/Benefits/Benefits";
 import {Manual} from "./components/Manual/Manual";
 import {VideoManual} from "./components/VideoManual/VideoManual";
+import {Questions} from "./components/Questions/Questions";
 
 export function App() {
     return (
@@ -17,6 +18,7 @@ export function App() {
             <Benefits/>
             <Manual/>
             <VideoManual/>
+            <Questions/>
         </div>
     );
 }
