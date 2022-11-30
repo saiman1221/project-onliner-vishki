@@ -2,7 +2,6 @@ import React from "react";
 import s from './Card.module.css';
 
 export function Card(props) {
-    debugger;
     return (
         <div className={s.card}>
             <div className={s.info}>

@@ -56,24 +56,18 @@
     color: #FFFFFF;
     border-radius: 10px 0 10px 10px;
     margin-top: 20px;
-    position: absolute;
-    top: 0;
-    left: 18px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
     transition: 0.4s;
     width: 100%;
+    z-index: 20;
 }
 
 .hidden{
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.4s;
-    transform: translateY(-50px);
-
+    display: none;
 }
 
 .visible{
-    opacity: 1;
-    pointer-events: auto;
-    transition: 0.4s;
-    transform: translateY(0px);
+    display: block;
 }

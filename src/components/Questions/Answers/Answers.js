@@ -1,16 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import s from './Answers.module.css'
 
 export function Answers(props) {
-    const [hidden, setHidden] = useState(true)
-
-    useEffect(() => {
-
-    }, [hidden])
+    const [hidden, setHidden] = useState(true);
 
     return (
         <div className={s.answers}>
-            <div className={s.question_content} onClick={e => {setHidden(!hidden)}}>
+            <div className={s.question_content}  onClick={e => { setHidden(!hidden);}}>
                 <h3>{props.question}</h3>
                 <div className={s.button}>
                     <div className={s.line}></div>
