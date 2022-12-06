@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Questions.module.css'
+import './Questions.css'
 import {Answers} from "./Answers/Answers";
 
 const questionsData = [
@@ -24,9 +24,9 @@ const questionsData = [
 
 export function Questions() {
     return (
-        <div className={s.questions + ' container'}>
+        <div className={'Questions__questions container'} id={'questions'}>
             <h2>Вопрос / ответ</h2>
-            <div className={s.questions_content}>
+            <div className={'Questions__questions_content'}>
                 {questionsData.map(el => <Answers question={el.question} answer={el.answer}/>)}
             </div>
         </div>

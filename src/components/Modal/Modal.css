@@ -1,0 +1,146 @@
+.Modal__modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease-in-out;
+}
+
+.Modal__active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Modal__content{
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    transform: scale(0.5);
+    position: relative;
+    transition: 0.4s ease-in-out;
+    padding: 35px;
+    text-align: center;
+}
+
+.Modal__modal  .Modal__active{
+    transform: scale(1);
+}
+
+.Modal__close{
+    width: 30px;
+    height: 30px;
+    background-image: url("images/close.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.4s;
+}
+
+.Modal__close:hover{
+    opacity: 0.5;
+}
+
+.Modal__modal h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #043E71;
+    margin-bottom: 15px;
+}
+
+.Modal__modal p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Modal__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Modal__modal input{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    background: #ECEBE8;
+    border-radius: 50px;
+    padding: 10px 0;
+    width: 234px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.Modal__form button{
+    background: #FFB31E;
+    border-radius: 50px;
+    padding: 10px 0;
+    width: 234px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.Modal__modal hr{
+    width: 70%;
+    margin: 15px auto;
+}
+
+.Modal__modal .Modal__text_phone{
+    margin-bottom: 20px;
+}
+
+.Modal__phone{
+    background: #3078B5;
+    border-radius: 50px;
+    padding: 12px 32px 12px 63px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+
+.Modal__phone:before{
+    content: url("images/phone.svg");
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 32px;
+    width: 20px;
+    height: 20px;
+}
+

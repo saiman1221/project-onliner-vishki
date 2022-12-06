@@ -1,0 +1,29 @@
+.SpecificationsTable__table{
+    max-width: 718px;
+    margin: 40px auto 74px auto;
+}
+
+.SpecificationsTable__table tr:nth-child(2n+1){
+    background: #ECF6FF;
+}
+
+.SpecificationsTable__table tr:nth-child(2n+1):hover{
+    background: #dce8fc;
+}
+
+.SpecificationsTable__table tr:nth-child(1) td:nth-child(1){
+    border-top-left-radius: 7px;
+}
+
+.SpecificationsTable__table tr:nth-child(1) td:nth-child(4){
+    border-top-right-radius: 7px;
+}
+
+.SpecificationsTable__table tr:nth-child(7) td:nth-child(1){
+    border-bottom-left-radius: 7px;
+}
+
+.SpecificationsTable__table tr:nth-child(7) td:nth-child(4){
+    border-bottom-right-radius: 7px;
+}
+

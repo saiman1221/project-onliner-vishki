@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react"
+
 import {MainScreen} from "./components/MainScreen/MainScreen";
 import {ProductInfoTable} from "./components/ProductInfoTable/ProductInfotable";
 import {Feedback} from "./components/Feedback/Feedback";
@@ -9,13 +10,16 @@ import {VideoManual} from "./components/VideoManual/VideoManual";
 import {Questions} from "./components/Questions/Questions";
 import {Footer} from "./components/Footer/Footer";
 import {YandexMaps} from "./components/YandexMaps/YandexMaps";
+import Modal from "./components/Modal/Modal";
+import {Cards} from "./components/Cards/Cards";
 
+export function App(){
+    const [modalActive, setModalActive] = useState(false);
 
-
-export function App() {
     return (
         <div className="App">
-            <MainScreen/>
+            <MainScreen modal={setModalActive}/>
+            <Cards modal={setModalActive}/>
             <ProductInfoTable/>
             <Feedback/>
             <SpecificationsTable/>
@@ -23,8 +27,9 @@ export function App() {
             <Manual/>
             <VideoManual/>
             <Questions/>
-            <Footer/>
+            <Footer modal={setModalActive}/>
             <YandexMaps/>
+            <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     );
 }

@@ -1,8 +1,8 @@
-.video_manual{
+.VideoManual__video_manual{
 
 }
 
-.video_manual h2{
+.VideoManual__video_manual h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,10 +12,10 @@
     margin-bottom: 50px;
 }
 
-.video{
+.VideoManual__video{
     width: 769px;
     height: 432px;
     margin: 0 auto 105px auto;
 
-    background-color: #397AB2;
+    /*background-color: #397AB2;*/
 }

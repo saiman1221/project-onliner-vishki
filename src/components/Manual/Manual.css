@@ -1,4 +1,4 @@
-.manual h2{
+.Manual__manual h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -8,11 +8,11 @@
     margin-bottom: 112px;
 }
 
-.manual .cards{
+.Manual__manual .Manual__cards{
 
 }
 
-.card{
+.Manual__card{
     display: flex;
     align-items: flex-start;
     gap: 66px;
@@ -20,7 +20,7 @@
     margin-bottom: 130px;
 }
 
-.card .number{
+.Manual__card .Manual__number{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,7 @@
     transform: translateY(-75px);
 }
 
-.card .text{
+.Manual__text{
     width: 70%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -41,12 +41,12 @@
     color: #000000;
 }
 
-.card img{
+.Manual__card img{
     margin: 55px auto 0 auto;
     display: flex;
     justify-content: center;
 }
 
-.card:nth-child(2) img{
+.Manual__card:nth-child(2) img{
     margin-bottom: 55px;
 }

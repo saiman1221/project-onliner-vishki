@@ -1,0 +1,94 @@
+.MobilMenu__content{
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: 0.4s;
+    padding: 150px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MobilMenu__content__close{
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.MobilMenu__close{
+    width: 30px;
+    height: 30px;
+    background-image: url("images/close.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+.MobilMenu__close:hover{
+    opacity: 0;
+}
+
+.MobilMenu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+}
+
+.MobilMenu__links a{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.MobilMenu__second_header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.MobilMenu____list_item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+}
+
+.MobilMenu____list_item h4{
+    color: #E39C13;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.MobilMenu____list_item p, .MobilMenu____list_item a{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    transform: translateX(10px);
+}

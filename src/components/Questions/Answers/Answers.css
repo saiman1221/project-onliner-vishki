@@ -1,14 +1,14 @@
-.answers{
+.Answers__answers{
     cursor: pointer;
 }
 
-.question_content{
+.Answers__question_content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.question_content h3{
+.Answers__question_content h3{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -16,17 +16,16 @@
     line-height: 22px;
     text-transform: uppercase;
     color: #303030;
-
     padding: 20px 0;
 }
 
-.button{
+.Answers__button{
     width: 22px;
     height: 22px;
     position: relative;
 }
 
-.question_content .button .line{
+.Answers__line{
     width: 22px;
     height: 2px;
     background-color: #303030;
@@ -37,15 +36,15 @@
 
 }
 
-.question_content .button .line:nth-child(2){
+.Answers__line:nth-child(2){
     transform: rotateZ(90deg);
 }
 
-.answer_content {
+.Answers__answer_content {
     position: relative;
 }
 
-.answer_content p{
+.Answers__answer_content p{
     padding: 20px 40px;
     background: #002543;
     font-family: 'Montserrat', sans-serif;
@@ -55,19 +54,15 @@
     line-height: 20px;
     color: #FFFFFF;
     border-radius: 10px 0 10px 10px;
-    margin-top: 20px;
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
     transition: 0.4s;
     width: 100%;
     z-index: 20;
 }
 
-.hidden{
+.Answers__hidden{
     display: none;
 }
 
-.visible{
+.Answers__visible{
     display: block;
 }

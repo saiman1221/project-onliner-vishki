@@ -1,11 +1,10 @@
-.header{
+.SecondHeader__header{
     width: 100%;
-    margin: 15px 0;
     background: rgba(38, 60, 85, 0.38);
     height: 40px;
 }
 
-.display{
+.SecondHeader__display{
     width: 100%;
     height: 100%;
     display: flex;
@@ -14,7 +13,7 @@
     gap: 70px;
 }
 
-.header a{
+.SecondHeader__header a{
     padding: 0 15px;
     height: 100%;
     display: flex;
@@ -23,11 +22,11 @@
     transition: 0.4s;
 }
 
-.header a:hover{
+.SecondHeader__header a:hover{
     background: rgba(38, 60, 85, 0.45);
 }
 
-.header a:nth-child(1){
+.SecondHeader__header a:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -37,7 +36,7 @@
     text-decoration: none;
 }
 
-.header a:nth-child(2) {
+.SecondHeader__header a:nth-child(2) {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -48,7 +47,7 @@
 
 }
 
-.header a:nth-child(3) {
+.SecondHeader__header a:nth-child(3) {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -58,22 +57,22 @@
     text-decoration: none;
 }
 
-.header a:before{
+.SecondHeader__header a:before{
     margin-right: 10px;
     padding-top: 4px;
 }
 
-.header a:nth-child(1):before{
+.SecondHeader__header a:nth-child(1):before{
     content: url("images/phone.svg");
     display: flex;
     align-items: center;
 }
-.header a:nth-child(2):before{
+.SecondHeader__header a:nth-child(2):before{
     content: url("images/mail.svg");
     display: flex;
     align-items: center;
 }
-.header a:nth-child(3):before{
+.SecondHeader__header a:nth-child(3):before{
     content: url("images/time.svg");
     display: flex;
     align-items: center;

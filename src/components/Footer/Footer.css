@@ -1,27 +1,24 @@
-.footer{
+.Footer__footer{
     background: #575757;
     width: 100%;
     padding: 40px 0;
 }
 
-.footer .bottom_footer{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 0 20px;
+.Footer__container{
+    width: 1170px;
+    margin: 0 auto;
 }
 
-.footer_content{
+.Footer__footer_content{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.footer .left h2{
+
+
+
+.Footer__info h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -32,60 +29,50 @@
     text-align: left;
 }
 
-.footer .left ul{
+.Footer__list{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    list-style: none;
+    margin: 25px 0;
 }
 
-.footer .left ul li{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    position: relative;
-}
-
-.list_item{
+.Footer__list__item{
     display: flex;
     gap: 12px;
 }
 
-.list_item:before{
+.Footer__list__item:before{
     display: flex;
     align-items: center;
+    width: 20px;
+    height: 20px;
 }
 
-.footer .left ul li:nth-child(1) .list_item:before{
+.Footer__footer .Footer__list__item:nth-child(1):before{
     content: '';
     background-image: url("images/phone.svg");
     background-position: center;
     background-size: cover;
-    width: 20px;
-    height: 20px;
+
     margin-top: -3px;
 }
-.footer .left ul li:nth-child(2) .list_item:before{
+.Footer__footer .Footer__list__item:nth-child(3):before{
     content: '';
     background-image: url("images/address.svg");
     background-position: center;
     background-size: cover;
-    width: 15px;
-    height: 22px;
+
     margin-top: -2px;
 }
-.footer .left ul li:nth-child(3) .list_item:before{
+.Footer__footer .Footer__list__item:nth-child(2):before{
     content: '';
     background-image: url("images/mail.svg");
     background-position: center;
     background-size: cover;
-    width: 20px;
-    height: 15px;
+
  }
 
-
-.footer .left ul li h4{
+.Footer__footer .Footer__info h4{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -94,7 +81,7 @@
     color: #CECECE;
 }
 
-.footer .left ul li .text, .footer .left ul li p{
+.Footer__footer .Footer__info .Footer__text, .Footer__footer .Footer__info p{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -105,7 +92,7 @@
     text-decoration: none;
 }
 
-.footer .left ul li span{
+.Footer__footer .Footer__info span{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -114,13 +101,13 @@
     color: #E99F10;
 }
 
-.middle{
+.Footer__links{
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.middle a{
+.Footer__links a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -131,11 +118,11 @@
     transition: 0.4s;
 }
 
-.middle a:hover{
+.Footer__links a:hover{
     color: #FFB31E;
 }
 
-.right button{
+.Footer__button button{
     padding: 18px 55px;
     background: #FFB31E;
     box-shadow: 0 4px 30px rgba(61, 61, 61, 0.1);
@@ -151,7 +138,22 @@
     transition: 0.4s;
 }
 
-.right button:hover{
+.Footer__button button:hover{
     background: none;
     color: #fff;
+}
+
+.Footer__button__mobil{
+    display: none;
+}
+
+.Footer__bottom_footer{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 20px;
 }

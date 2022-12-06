@@ -1,8 +1,8 @@
-.table{
+.ProductInfoTable__table{
     margin-bottom: 64px;
 }
 
-.table h2{
+.ProductInfoTable__table h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,7 +12,7 @@
     margin-bottom: 40px;
 }
 
-.table table{
+.ProductInfoTable__table table{
     background: none;
     width: 100%;
     text-align: center;
@@ -27,7 +27,7 @@
     border-radius: 7px;
 }
 
-.table table tr:nth-child(1){
+.ProductInfoTable__table table tr:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -38,54 +38,54 @@
 
 
 
-.table td{
+.ProductInfoTable__table td{
     padding: 12px 0;
     border-right: 2px solid #fff;
 }
 
-.table td:nth-child(7){
+.ProductInfoTable__table td:nth-child(7){
     border: none;
 }
 
-.table td:nth-child(1){
+.ProductInfoTable__table td:nth-child(1){
     text-align: left;
     padding-left: 29px;
 }
 
-.table tr{
+.ProductInfoTable__table tr{
     overflow-x: hidden;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.table tr:nth-child(2n){
+.ProductInfoTable__table tr:nth-child(2n){
     background: #FFFCFC;
 }
 
-.table tr:nth-child(2n+1){
+.ProductInfoTable__table tr:nth-child(2n+1){
     background: #FFF5E5;
 }
 
-.table tr:nth-child(2n):hover{
+.ProductInfoTable__table tr:nth-child(2n):hover{
     background: rgb(250,247,247);
 }
 
-.table tr:nth-child(2n+1):hover{
+.ProductInfoTable__table tr:nth-child(2n+1):hover{
     background: rgb(2545,235,219);
 }
 
-.table tr:nth-child(1) td:nth-child(1){
+.ProductInfoTable__table tr:nth-child(1) td:nth-child(1){
     border-top-left-radius: 7px;
 }
 
-.table tr:nth-child(1) td:nth-child(7){
+.ProductInfoTable__table tr:nth-child(1) td:nth-child(7){
     border-top-right-radius: 7px;
 }
 
-.table tr:nth-child(17) td:nth-child(1){
+.ProductInfoTable__table tr:nth-child(17) td:nth-child(1){
     border-bottom-left-radius: 7px;
 }
 
-.table tr:nth-child(17) td:nth-child(7){
+.ProductInfoTable__table tr:nth-child(17) td:nth-child(7){
     border-bottom-right-radius: 7px;
 }

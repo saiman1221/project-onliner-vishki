@@ -1,0 +1,62 @@
+.MainScreen__main_screen{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/background.png");
+    /*background-size: 100%;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 90px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.MainScreen__header{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.MainScreen__main_screen__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.MainScreen__main_screen h1{
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 71px;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+.MainScreen__main_screen .MainScreen__button{
+    background: #E39C13;
+    border-radius: 50px;
+    padding: 18px 56px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001728;
+    cursor: pointer;
+    border: 2px solid #E39C13;
+    transition: 0.4s;
+}
+
+.MainScreen__main_screen .MainScreen__button:hover{
+    background: none;
+    color: #fff;
+}
+
