@@ -5,7 +5,6 @@ import './Cards.css'
 import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
 import img3 from "./images/img3.png";
-import {Carousel} from "react-responsive-carousel";
 
 export const Cards = (props) => {
     const cardsParams = [
@@ -59,9 +58,7 @@ export const Cards = (props) => {
                 {cardsParams.map(item => <Card cardsParams={item} modal={updateModal}/>)}
             </div>
             <div className={'Cards__content__mobil'}>
-                <Carousel showArrows={true} showIndicators={false} showStatus={false} showThumbs={false}>
-                    {cardsParams.map(item => <Card cardsParams={item} modal={updateModal}/>)}
-                </Carousel>
+                {cardsParams.map(item => <Card cardsParams={item} modal={updateModal}/>)}
             </div>
             <p className={'Cards__text'} id={'product_info'}>* Минимальный срок аренды - 3 дня</p>
         </div>

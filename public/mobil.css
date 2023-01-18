@@ -20,7 +20,7 @@
         display: none;
     }
     .App .Cards__content__mobil{
-        display: block;
+        display: flex;
     }
     .App .Card__card{
         max-width: 450px;
@@ -65,6 +65,9 @@
     }
     .App .Answers__question_content h3{
         width: 80%;
+    }
+    .App .VideoManual__video{
+        width: 100%;
     }
 }
 
@@ -195,13 +198,59 @@
     .App .Modal__content{
         width: 80%;
     }
+    .App .ProductInfoTable__table table{
+        width: 600px;
+    }
+    .App .ProductInfoTable__table{
+        overflow-x: scroll;
+    }
+    .App .Feedback__feedback input, .App .Feedback__feedback button, .App .Feedback__phone{
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .App .Feedback__phone:before{
+        left: 15px;
+    }
+    .App .Feedback__feedback p{
+        width: 100%;
+    }
+    .App .Manual__card img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
+    .App .MobilMenu__content{
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .App .MobilMenu__second_header{
+        gap: 10px;
+    }
     .App .Benefits__benefits h2{
         font-size: 30px;
     }
     .App .Benefits__cards__mobil .Benefits__card p{
         font-size: 20px;
+    }
+    .App .Card__card{
+        max-width: 95%;
+        min-width: 95%;
+        min-height: auto;
+        max-height: none;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+    }
+    .App .Card__size_buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .App .Card__size_buttons .Card__size_button{
+        width: 100%;
+    }
+    .App .Feedback__feedback .Feedback__form{
+        width: 100%;
     }
 }

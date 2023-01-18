@@ -31,9 +31,9 @@
 }
 
 .Cards__content__mobil{
+    width: 100%;
     display: none;
-}
-
-.Cards__content__mobil{
-
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }

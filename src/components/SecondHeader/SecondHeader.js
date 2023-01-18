@@ -5,9 +5,9 @@ export function SecondHeader() {
     return (
         <header className={'SecondHeader__header'}>
             <div className={'SecondHeader__display'}>
-                <a href="#">+375 (33) 916 16 19</a>
-                <a href="#">gradovichnicolay@gmail.com</a>
-                <a href="#">9:00 - 20:00</a>
+                <a href="tel:+3753391619" className={'link'}>+375 (33) 916 16 19</a>
+                <a href="mailto:gradovichnicolay@gmail.com" className={'link'}>gradovichnicolay@gmail.com</a>
+                <p className={'link'}>Пн - Пт: 8:00 - 17:00</p>
             </div>
         </header>
     );

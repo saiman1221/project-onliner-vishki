@@ -13,7 +13,7 @@ export const Footer = (props) => {
                             <h4>Телефон:</h4><a href={'tel: +375 33 916 16 19'} className={'Footer__text'}>+375 33 916 16 19</a>
                         </div>
                         <div className={'Footer__list__item'}>
-                            <h4>E-mail:</h4><a href='' className={'Footer__text'}>gradovichnicolay@gmail.com</a>
+                            <h4>E-mail:</h4><a href='mailto:gradovichnicolay@gmail.com' className={'Footer__text'}>gradovichnicolay@gmail.com</a>
                         </div>
                         <div className={'Footer__list__item'}>
                             <h4>Адрес:</h4><p>д.Лесковка, улица Центральная, 6а (только яндекс навигатор, другие навигаторы не показывают этот адрес)</p>

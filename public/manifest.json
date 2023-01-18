@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Аренда вышки туры",
+  "name": "Аренда вышки туры от 3,3 рубля за сутки в Минске",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

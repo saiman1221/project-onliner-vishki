@@ -28,6 +28,19 @@
     margin-bottom: 10px;
 }
 
+.Feedback__feedback p[class^='error_']{
+    font-weight: 500;
+    color: red;
+    pointer-events: auto;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.Feedback__feedback p[class$='_show']{
+    pointer-events: none;
+    opacity: 0;
+}
+
 .Feedback__form{
     display: flex;
     flex-direction: column;
@@ -36,7 +49,7 @@
     margin-top: 15px;
 }
 
-.Feedback__feedback input{
+.Feedback__feedback .input{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -52,7 +65,7 @@
     text-align: center;
 }
 
-.Feedback__form button{
+.Feedback__form .button{
     background: #FFB31E;
     border-radius: 50px;
     padding: 10px 0;
@@ -63,8 +76,19 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    border: none;
+    border: 2px solid #FFB31E;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.Feedback__form .button:hover{
+    box-shadow: 0 4px 10px 1px rgba(255,179,30, 0.5);
+}
+
+.Feedback__form .active{
+    transition: 0.4s;
+    background: none;
+    color: #E39C13;
 }
 
 .Feedback__feedback hr{
@@ -88,6 +112,11 @@
     color: #FFFFFF;
     text-decoration: none;
     position: relative;
+    transition: 0.4s;
+}
+
+.Feedback__phone:hover{
+    box-shadow: 0 4px 10px 1px rgba(48,120,181, 0.5);
 }
 
 .Feedback__phone:before{
@@ -98,3 +127,4 @@
     width: 20px;
     height: 20px;
 }
+

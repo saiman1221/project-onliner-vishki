@@ -81,7 +81,7 @@
     margin-top: 15px;
 }
 
-.Modal__modal input{
+.Modal__modal .input{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -97,7 +97,7 @@
     text-align: center;
 }
 
-.Modal__form button{
+.Modal__form .button{
     background: #FFB31E;
     border-radius: 50px;
     padding: 10px 0;
@@ -108,8 +108,15 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    border: none;
+    border: 2px solid #FFB31E;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.Modal__form .active{
+    transition: 0.4s;
+    background: none;
+    color: #E39C13;
 }
 
 .Modal__modal hr{

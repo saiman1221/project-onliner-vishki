@@ -58,11 +58,11 @@
     width: 20%;
 }
 
-.App .Benefits__card p{
-    font-size: 26px;
-    line-height: 30px;
-    width: 70%;
-}
+/*.App .Benefits__card p{*/
+/*    font-size: 26px;*/
+/*    line-height: 30px;*/
+/*    width: 70%;*/
+/*}*/
 
 .App .Benefits__cards__mobil .carousel .control-dots {
     margin: 0;
