@@ -1,5 +1,4 @@
-.Benefits__benefits{
-    width: 100%;
+.Benefits{
     background-image: url("images/background.png");
     background-size: cover;
     background-position: center;
@@ -10,7 +9,7 @@
     margin-bottom: 100px;
 }
 
-.Benefits__benefits h2{
+.Benefits h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -21,14 +20,14 @@
     margin-bottom: 25px;
 }
 
-.Benefits__cards{
+.Benefits .cards{
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.Benefits__card{
+.Benefits .card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +35,7 @@
     gap: 20px;
 }
 
-.Benefits__card p{
+.Benefits .card p{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -46,28 +45,22 @@
     color: #FFFFFF;
 }
 
-.App .Benefits__cards__mobil{
+.Benefits .cards.mobil{
     display: none;
 }
 
-.App .Benefits__cards__mobil .Benefits__card{
+.Benefits .cards.mobil .card{
     min-width: 100%;
 }
 
-.App .Benefits__cards__mobil .Benefits__card img{
+.Benefits .cards.mobil img{
     width: 20%;
 }
 
-/*.App .Benefits__card p{*/
-/*    font-size: 26px;*/
-/*    line-height: 30px;*/
-/*    width: 70%;*/
-/*}*/
-
-.App .Benefits__cards__mobil .carousel .control-dots {
+.Benefits .cards.mobil .carousel .control-dots {
     margin: 0;
 }
 
-.App .Benefits__cards__mobil .carousel.carousel-slider{
+.Benefits .cards.mobil .carousel.carousel-slider{
     padding-bottom: 50px;
 }

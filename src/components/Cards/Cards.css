@@ -1,39 +1,29 @@
-.Cards__cards{
-    margin-top: -150px;
+.Cards{
+    margin-top: -30px;
     margin-bottom: 80px;
     z-index: 200;
 }
 
-.Cards__content{
+.Cards > .content{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.Cards__text{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;
-    color: #AF0000;
-    margin-top: 33px;
-}
-
-.Cards__text{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;
-    color: #AF0000;
-    margin-top: 33px;
-}
-
-.Cards__content__mobil{
+.Cards > .content__mobil{
     width: 100%;
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.Cards > .text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #AF0000;
+    margin-top: 33px;
 }

@@ -1,14 +1,14 @@
-.Answers__answers{
+.Answers{
     cursor: pointer;
 }
 
-.Answers__question_content{
+.Answers .question.content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Answers__question_content h3{
+.Answers .question h3{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -19,13 +19,13 @@
     padding: 20px 0;
 }
 
-.Answers__button{
+.Answers .question .button{
     width: 22px;
     height: 22px;
     position: relative;
 }
 
-.Answers__line{
+.Answers .question .line{
     width: 22px;
     height: 2px;
     background-color: #303030;
@@ -36,15 +36,15 @@
 
 }
 
-.Answers__line:nth-child(2){
+.Answers .question .line:nth-child(2){
     transform: rotateZ(90deg);
 }
 
-.Answers__answer_content {
+.Answers .answer.content {
     position: relative;
 }
 
-.Answers__answer_content p{
+.Answers .answer p{
     padding: 20px 40px;
     background: #002543;
     font-family: 'Montserrat', sans-serif;
@@ -59,10 +59,10 @@
     z-index: 20;
 }
 
-.Answers__hidden{
+.Answers .answer .hidden{
     display: none;
 }
 
-.Answers__visible{
+.Answers .answer .visible{
     display: block;
 }

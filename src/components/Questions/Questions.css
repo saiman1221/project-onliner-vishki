@@ -1,8 +1,8 @@
-.Questions__questions{
+.Questions{
     margin-bottom: 120px;
 }
 
-.Questions__questions h2{
+.Questions > h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,7 +12,7 @@
     margin-bottom: 40px;
 }
 
-.Questions__questions_content{
+.Questions > .content{
     padding: 30px;
     margin-left: 25px;
     border-left: 1px solid #303030;

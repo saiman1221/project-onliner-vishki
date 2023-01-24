@@ -23,12 +23,15 @@ const tableData = [
 
 export function ProductInfoTable() {
     return (
-        <div className={'ProductInfoTable__table container'}>
-            <h2>Технические характеристики вышки туры передвижной</h2>
-            <table>
-                {tableData.map(el => <tr>{el.map(item => <td>{item}</td>)}</tr>)}
-            </table>
-            <div id={'feedback'}></div>
+        <div className={'Product_info_table'}>
+            <div className={'container'}>
+                <h2>Технические характеристики вышки туры передвижной</h2>
+            </div>
+            <div className={'container'}>
+                <table>
+                    {tableData.map(el => <tr>{el.map(item => <td>{item}</td>)}</tr>)}
+                </table>
+            </div>
         </div>
     );
 }

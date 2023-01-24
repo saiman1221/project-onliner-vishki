@@ -1,8 +1,8 @@
-.ProductInfoTable__table{
+.Product_info_table{
     margin-bottom: 64px;
 }
 
-.ProductInfoTable__table h2{
+.Product_info_table h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,7 +12,7 @@
     margin-bottom: 40px;
 }
 
-.ProductInfoTable__table table{
+.Product_info_table table{
     background: none;
     width: 100%;
     text-align: center;
@@ -27,7 +27,7 @@
     border-radius: 7px;
 }
 
-.ProductInfoTable__table table tr:nth-child(1){
+.Product_info_table table tr:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -36,56 +36,54 @@
     color: #000000;
 }
 
-
-
-.ProductInfoTable__table td{
+.Product_info_table td{
     padding: 12px 0;
     border-right: 2px solid #fff;
 }
 
-.ProductInfoTable__table td:nth-child(7){
+.Product_info_table td:last-child{
     border: none;
 }
 
-.ProductInfoTable__table td:nth-child(1){
+.Product_info_table td:nth-child(1){
     text-align: left;
     padding-left: 29px;
 }
 
-.ProductInfoTable__table tr{
+.Product_info_table tr{
     overflow-x: hidden;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.ProductInfoTable__table tr:nth-child(2n){
+.Product_info_table tr:nth-child(2n){
     background: #FFFCFC;
 }
 
-.ProductInfoTable__table tr:nth-child(2n+1){
+.Product_info_table tr:nth-child(2n+1){
     background: #FFF5E5;
 }
 
-.ProductInfoTable__table tr:nth-child(2n):hover{
+.Product_info_table tr:nth-child(2n):hover{
     background: rgb(250,247,247);
 }
 
-.ProductInfoTable__table tr:nth-child(2n+1):hover{
+.Product_info_table tr:nth-child(2n+1):hover{
     background: rgb(2545,235,219);
 }
 
-.ProductInfoTable__table tr:nth-child(1) td:nth-child(1){
+.Product_info_table tr:nth-child(1) td:nth-child(1){
     border-top-left-radius: 7px;
 }
 
-.ProductInfoTable__table tr:nth-child(1) td:nth-child(7){
+.Product_info_table tr:nth-child(1) td:last-child{
     border-top-right-radius: 7px;
 }
 
-.ProductInfoTable__table tr:nth-child(17) td:nth-child(1){
+.Product_info_table tr:last-child td:nth-child(1){
     border-bottom-left-radius: 7px;
 }
 
-.ProductInfoTable__table tr:nth-child(17) td:nth-child(7){
+.Product_info_table tr:last-child td:last-child{
     border-bottom-right-radius: 7px;
 }

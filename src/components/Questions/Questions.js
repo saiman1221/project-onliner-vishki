@@ -24,9 +24,9 @@ const questionsData = [
 
 export function Questions() {
     return (
-        <div className={'Questions__questions container'} id={'questions'}>
+        <div className={'Questions container'} id={'questions'}>
             <h2>Вопрос / ответ</h2>
-            <div className={'Questions__questions_content'}>
+            <div className={'content'}>
                 {questionsData.map(el => <Answers question={el.question} answer={el.answer}/>)}
             </div>
         </div>

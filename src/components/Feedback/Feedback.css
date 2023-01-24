@@ -1,4 +1,4 @@
-.Feedback__feedback{
+.Feedback{
     width: 630px;
     margin: 65px auto;
     text-align: center;
@@ -8,7 +8,7 @@
     padding: 18px 18px 40px 18px;
 }
 
-.Feedback__feedback h3{
+.Feedback h3{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -18,7 +18,7 @@
     margin-bottom: 15px;
 }
 
-.Feedback__feedback p{
+.Feedback p{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -28,7 +28,7 @@
     margin-bottom: 10px;
 }
 
-.Feedback__feedback p[class^='error_']{
+.Feedback p[class^='error_']{
     font-weight: 500;
     color: red;
     pointer-events: auto;
@@ -36,12 +36,12 @@
     transition: 0.4s;
 }
 
-.Feedback__feedback p[class$='_show']{
+.Feedback p[class$='_show']{
     pointer-events: none;
     opacity: 0;
 }
 
-.Feedback__form{
+.Feedback .form{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -49,7 +49,7 @@
     margin-top: 15px;
 }
 
-.Feedback__feedback .input{
+.Feedback .input{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -65,7 +65,7 @@
     text-align: center;
 }
 
-.Feedback__form .button{
+.Feedback .button{
     background: #FFB31E;
     border-radius: 50px;
     padding: 10px 0;
@@ -81,26 +81,26 @@
     transition: 0.4s;
 }
 
-.Feedback__form .button:hover{
+.Feedback .button:hover{
     box-shadow: 0 4px 10px 1px rgba(255,179,30, 0.5);
 }
 
-.Feedback__form .active{
+.Feedback .button.active{
     transition: 0.4s;
     background: none;
     color: #E39C13;
 }
 
-.Feedback__feedback hr{
+.Feedback hr{
     width: 364px;
     margin: 15px auto;
 }
 
-.Feedback__feedback .Feedback__text_phone{
+.Feedback .text_phone{
     margin-bottom: 20px;
 }
 
-.Feedback__phone{
+.Feedback .phone{
     background: #3078B5;
     border-radius: 50px;
     padding: 12px 32px 12px 63px;
@@ -115,11 +115,11 @@
     transition: 0.4s;
 }
 
-.Feedback__phone:hover{
+.Feedback .phone:hover{
     box-shadow: 0 4px 10px 1px rgba(48,120,181, 0.5);
 }
 
-.Feedback__phone:before{
+.Feedback .phone:before{
     content: url("images/phone.svg");
     position: absolute;
     top: calc(50% - 10px);

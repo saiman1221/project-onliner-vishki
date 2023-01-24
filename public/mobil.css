@@ -1,73 +1,82 @@
 @media (max-width: 1200px) {
-    .container, .App .Footer__container {
+    .App .container {
         width: 960px;
     }
-    .MainScreen__main_screen h1{
-        width: 70%;
-    }
-    .App .MainScreen__main_screen__content{
+
+    .App .First_screen > .content {
         align-items: center;
     }
-    .App .MainScreen__main_screen__content h1{
+
+    .App .First_screen > .content > h1 {
         width: 80%;
         text-align: center;
     }
-    .Cards__cards .Cards__content{
-        justify-content: center;
-        gap: 10%;
-    }
-    .App .Cards__content{
+
+    .App .Cards > .content {
         display: none;
     }
-    .App .Cards__content__mobil{
+
+    .App .Cards > .content__mobil {
         display: flex;
     }
-    .App .Card__card{
+
+    .App .Card {
         max-width: 450px;
         width: 450px;
         max-height: 570px;
         height: 570px;
     }
-    .App .Card__button{
+
+    .App .Card .button {
         width: 100%;
     }
-    .App .Modal__content{
+
+    .App .Modal .content {
         width: 50%;
     }
 }
 
 @media (max-width: 992px) {
-    .App .container, .App .Footer__container{
+    .App .container {
         width: 720px;
     }
-    .App .MainScreen__header .FirstHeaderMobil__header{
+
+    .App .First_header {
+        display: none;
+    }
+
+    .App .First_header__mobil {
         display: block;
     }
-    .App .MainScreen__header .FirstHeader__header{
-        display: none;
-    }
-    .App .Benefits__cards{
+
+    .App .Benefits .cards {
         width: 80%;
     }
-    .App .Footer__links{
+
+    .App .Video_manual .video {
+        width: 100%;
+    }
+
+    .App .Answers .question h3 {
+        width: 80%;
+    }
+
+    .App .Footer .links {
         display: none;
     }
-    .App .Footer__bottom_footer{
+
+    .App .Footer .bottom {
         font-size: 14px;
         text-align: left;
         padding: 0;
     }
-    .App .Footer__button{
+
+    .App .Footer .button button {
         display: none;
     }
-    .App .Footer__button__mobil{
+
+    .App .Footer .button.mobil button {
         display: block;
-    }
-    .App .Answers__question_content h3{
-        width: 80%;
-    }
-    .App .VideoManual__video{
-        width: 100%;
     }
 }
 
@@ -75,166 +84,200 @@
     .App .container {
         width: 540px;
     }
-    .App .Footer__container{
-        width: 90%;
-    }
-    .App .MainScreen__header .FirstHeaderMobil__header{
-        display: block;
-    }
-    .App .MainScreen__header .FirstHeader__header{
+
+    .App .First_header {
         display: none;
     }
-    .App .MainScreen__main_screen__content{
+
+    .App .First_header__mobil {
+        display: block;
+    }
+
+    .App .Mobil_menu {
+        width: 70%;
+    }
+
+    .App .Second_header {
+        display: none;
+    }
+
+    .App .First_screen > .content {
         align-items: flex-start;
         text-align: left;
     }
-    .App .MobilMenu__content{
-        width: 70%;
-    }
-    .App .MainScreen__header .SecondHeader__header{
-        display: none;
-    }
-    .App .MainScreen__main_screen h1{
+
+    .App .First_screen > .content h1 {
         width: 90%;
         font-size: 50px;
         text-align: left;
     }
-    .App .Manual__manual h2{
-        margin-bottom: 50px;
-    }
-    .App  .Manual__card{
-        display: block;
-    }
-    .App .Manual__card .Manual__number{
-        transform: translateY(0);
-        text-align: left;
-        margin-bottom: 40px;
-    }
-    .App .Manual__text{
-        width: 100%;
-    }
-    .App .Feedback__feedback{
+
+    .App .Feedback {
         width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .App .Feedback__feedback h3{
+
+    .App .Feedback h3 {
         font-size: 30px;
         margin-bottom: 25px;
     }
-    .App .Feedback__feedback p{
+
+    .App .Feedback p {
         font-size: 15px;
         line-height: 20px;
         margin-bottom: 15px;
         width: 90%;
     }
-    .App .Feedback__feedback .Feedback__form{
+
+    .App .Feedback .form {
         gap: 10px;
     }
-    .App .Feedback__feedback input, .App .Feedback__feedback button, .App .Feedback__phone{
+
+    .App .Feedback input, .App .Feedback button, .App .Feedback .phone {
         padding: 15px 0;
         width: 300px;
         font-size: 16px;
     }
-    .App .Feedback__phone{
+
+    .App .Feedback .phone {
         width: 270px;
     }
-    .App .Feedback__feedback hr{
+
+    .App .Feedback hr {
         width: 80%;
         margin: 15px auto;
     }
-    .App .Benefits__benefits h2{
+
+    .App .Benefits h2 {
         font-size: 40px;
     }
-    .App .Benefits__cards{
+
+    .App .Benefits .cards {
         display: none;
     }
-    .App .Benefits__benefits .Benefits__cards__mobil{
+
+    .App .Benefits .cards.mobil {
         display: block;
     }
-    .App .VideoManual__video{
+
+    .App .Manual h2 {
+        margin-bottom: 50px;
+    }
+
+    .App .Manual .card {
+        display: block;
+    }
+
+    .App .Manual .card .number {
+        transform: translateY(0);
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .App .Manual .card .text {
         width: 100%;
     }
-    .App .Modal__content{
+
+    .App .Video_manual .video {
+        width: 100%;
+    }
+
+    .App .Footer .container {
+        width: 90%;
+    }
+
+    .App .Modal .content {
         width: 70%;
     }
 }
 
 @media (max-width: 576px) {
-    .App .container{
+    .App .container {
         width: 95%;
     }
-    .App .MainScreen__main_screen__content{
+
+    .App .First_screen > .content {
         align-items: center;
         text-align: center;
     }
-    .App .MainScreen__main_screen h1{
+
+    .App .First_screen > .content > h1 {
         width: 90%;
         font-size: 50px;
         text-align: center;
     }
-    .App .Feedback__feedback hr{
-        display: none;
-    }
-    .App .Feedback__feedback .Feedback__text_phone{
-        margin: 15px 0;
-    }
-    .App .Footer__bottom_footer{
-        text-align: center;
-        font-size: 12px;
-    }
-    .App .Answers__answer_content p{
-        padding: 20px 20px;
-        font-size: 11px;
-    }
-    .App .ProductInfoTable__table td:nth-child(1){
-        padding-left: 10px;
-    }
-    .App .Card__card{
+
+    .App .Card {
         max-width: 80%;
         min-width: 80%;
     }
-    .App .Modal__content{
-        width: 80%;
-    }
-    .App .ProductInfoTable__table table{
-        width: 600px;
-    }
-    .App .ProductInfoTable__table{
+
+    .App .Product_info_table {
         overflow-x: scroll;
     }
-    .App .Feedback__feedback input, .App .Feedback__feedback button, .App .Feedback__phone{
+
+    .App .Product_info_table table {
+        width: 600px;
+    }
+
+    .App .Product_info_table td:nth-child(1) {
+        padding-left: 10px;
+    }
+
+    .App .Feedback p {
+        width: 100%;
+    }
+
+    .App .Feedback hr {
+        display: none;
+    }
+
+    .App .Feedback .text_phone {
+        margin: 15px 0;
+    }
+
+    .App .Feedback .phone:before {
+        left: 15px;
+    }
+
+    .App .Feedback input, .App .Feedback button, .App .Feedback .phone {
         padding: 10px 10px;
         width: 100%;
         font-size: 12px;
     }
-    .App .Feedback__phone:before{
-        left: 15px;
-    }
-    .App .Feedback__feedback p{
+
+    .App .Manual .card img {
         width: 100%;
     }
-    .App .Manual__card img{
-        width: 100%;
+
+    .App .Answers .answer.content p {
+        padding: 20px 20px;
+        font-size: 11px;
+    }
+
+    .App .Footer .bottom {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .App .Modal .content {
+        width: 80%;
     }
 }
 
 @media (max-width: 450px) {
-    .App .MobilMenu__content{
+    .App .Mobil_menu {
         width: 100%;
         padding: 40px 20px;
     }
-    .App .MobilMenu__second_header{
+
+    .App .Mobil_menu .second_header {
         gap: 10px;
     }
-    .App .Benefits__benefits h2{
-        font-size: 30px;
-    }
-    .App .Benefits__cards__mobil .Benefits__card p{
-        font-size: 20px;
-    }
-    .App .Card__card{
+
+    .App .Card__card {
         max-width: 95%;
         min-width: 95%;
         min-height: auto;
@@ -243,14 +286,25 @@
         text-align: center;
         gap: 20px;
     }
-    .App .Card__size_buttons{
+
+    .App .Card__size_buttons {
         flex-direction: column;
         gap: 10px;
     }
-    .App .Card__size_buttons .Card__size_button{
+
+    .App .Card__size_buttons .Card__size_button {
         width: 100%;
     }
-    .App .Feedback__feedback .Feedback__form{
+
+    .App .Feedback__feedback .Feedback__form {
         width: 100%;
+    }
+
+    .App .Benefits h2 {
+        font-size: 30px;
+    }
+
+    .App .Benefits .cards.mobil .card p {
+        font-size: 20px;
     }
 }

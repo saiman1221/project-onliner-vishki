@@ -17,9 +17,9 @@ export function FirstHeaderMobil() {
     }
 
     return (
-        <header className={sticky ? "FirstHeaderMobil__header FirstHeaderMobil__header_fixed" : "FirstHeaderMobil__header"} id='first_header_mobil'>
-            <div className='FirstHeaderMobil__header_container'>
-                <div className={"FirstHeaderMobil__display"}>
+        <header className={sticky ? "First_header__mobil fixed" : "First_header__mobil"} id='first_header_mobil'>
+            <div className='container'>
+                <div className={"display"}>
                     <img src={logo} alt="Логотип"/>
                     <div onClick={()=>{setBurgerMenu(true)}} className={'burger_button'}>
                         <div></div>

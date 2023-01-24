@@ -1,4 +1,4 @@
-.MobilMenu__content{
+.Mobil_menu{
     width: 40%;
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
@@ -13,13 +13,13 @@
     justify-content: space-between;
 }
 
-.MobilMenu__content__close{
+.Mobil_menu.close{
     transform: translateX(100%);
     visibility: hidden;
     transition: 0.4s;
 }
 
-.MobilMenu__close{
+.Mobil_menu .close_button{
     width: 30px;
     height: 30px;
     background-image: url("images/close.svg");
@@ -35,19 +35,18 @@
     opacity: 0.5;
 }
 
-.MobilMenu__close:hover{
+.Mobil_menu .close_button:hover{
     opacity: 0;
 }
 
-.MobilMenu__links{
+.Mobil_menu .links{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
-
 }
 
-.MobilMenu__links a{
+.Mobil_menu .links a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -57,20 +56,20 @@
     transition: 0.4s;
 }
 
-.MobilMenu__second_header{
+.Mobil_menu .second_header{
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.MobilMenu____list_item{
+.Mobil_menu .second_header .list_item{
     display: flex;
     flex-direction: column;
     gap: 8px;
     color: #fff;
 }
 
-.MobilMenu____list_item h4{
+.Mobil_menu .second_header .list_item h4{
     color: #E39C13;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -81,7 +80,7 @@
     transition: 0.4s;
 }
 
-.MobilMenu____list_item p, .MobilMenu____list_item a{
+.Mobil_menu .second_header .list_item p, .Mobil_menu .second_header .list_item a{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;

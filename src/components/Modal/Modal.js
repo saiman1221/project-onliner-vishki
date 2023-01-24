@@ -64,14 +64,14 @@ const Modal = (props) => {
     };
 
     return (
-        <div className={props.active ? 'Modal__modal Modal__active' : 'Modal__modal'}
+        <div className={props.active ? 'Modal active' : 'Modal'}
              onClick={() => props.setActive(false)}>
-            <div className={props.active ? 'Modal__content Modal__active' : 'Modal__content'}
+            <div className={props.active ? 'content active' : 'content'}
                  onClick={(e) => e.stopPropagation()}>
-                <button className={'Modal__close'} onClick={() => props.setActive(false)}></button>
+                <button className={'close'} onClick={() => props.setActive(false)}></button>
                 <h3>Обратный звонок</h3>
                 <p>Оставьте заявку, мы перезвоним и с удовольствием ответим на все интересующие вопросы.</p>
-                <form ref={form} onSubmit={sendEmail} className={'Modal__form'}>
+                <form ref={form} onSubmit={sendEmail} className={'form'}>
                     <input type="text" placeholder={'Ваше имя'} name="user_name" value={userName} onChange={(e) => {
                         handleInputName(e.currentTarget.value)
                     }} className={'input'}/>
@@ -86,8 +86,8 @@ const Modal = (props) => {
                     </button>
                 </form>
                 <hr/>
-                <p className={'Modal__text_phone'}>Или позвоните нам прямо сейчас</p>
-                <a href="tel:+375339161619" className={'Modal__phone'}>+375 (33) 916 16 19</a>
+                <p className={'text_phone'}>Или позвоните нам прямо сейчас</p>
+                <a href="tel:+375339161619" className={'phone'}>+375 (33) 916 16 19</a>
             </div>
         </div>
     )

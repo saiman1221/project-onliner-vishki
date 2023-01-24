@@ -1,0 +1,45 @@
+.Links_bar{
+    width: 100%;
+    padding: 30px 0;
+    background: #ECF0F7;
+    margin-bottom: 70px;
+}
+
+.Links_bar .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Links_bar .content .item{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Links_bar .content .item h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #353535;
+}
+
+.Links_bar .content .item img{
+
+}
+
+/*Styles like the buttons on the first screen*/
+
+.Links_bar .content .item .link{
+
+}
+
+.Links_bar .content .item .link a{
+
+}

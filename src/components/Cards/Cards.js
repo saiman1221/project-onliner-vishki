@@ -1,6 +1,6 @@
 import React from "react";
 import {Card} from "./Card/Card";
-import './Cards.css'
+import './Cards.css';
 
 import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
@@ -48,19 +48,18 @@ export const Cards = (props) => {
     ]
 
     function updateModal(modalOpen){
-        props.modal(modalOpen)
-        console.log(modalOpen);
+        props.modal(modalOpen);
     }
 
     return(
-        <div className={'Cards__cards container'}>
-            <div className={'Cards__content'}>
+        <div className={'Cards container'}>
+            <div className={'content'}>
                 {cardsParams.map(item => <Card cardsParams={item} modal={updateModal}/>)}
             </div>
-            <div className={'Cards__content__mobil'}>
+            <div className={'content__mobil'}>
                 {cardsParams.map(item => <Card cardsParams={item} modal={updateModal}/>)}
             </div>
-            <p className={'Cards__text'} id={'product_info'}>* Минимальный срок аренды - 3 дня</p>
+            <p className={'text'} id={'product_info'}>* Минимальный срок аренды - 3 дня</p>
         </div>
     )
 }

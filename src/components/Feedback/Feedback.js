@@ -63,10 +63,10 @@ export function Feedback() {
     };
 
     return (
-        <div className={"Feedback__feedback"}>
+        <div className={"Feedback"}>
             <h3>Остались вопросы?</h3>
             <p>Оставьте заявку, мы перезвоним и с удовольствием ответим на все интересующие вопросы.</p>
-            <form ref={form} onSubmit={sendEmail} className={"Feedback__form"}>
+            <form ref={form} onSubmit={sendEmail} className={"form"}>
                 <input type="text" placeholder={'Ваше имя'} name="user_name" value={userName} onChange={(e) => {
                     handleInputName(e.currentTarget.value)
                 }} className={'input'}/>
@@ -79,8 +79,8 @@ export function Feedback() {
                 <button type={'submit'} className={buttonActive ? 'button active' : 'button'}>Заказать звонок</button>
             </form>
             <hr/>
-            <p className={"Feedback__text_phone"}>Или позвоните нам прямо сейчас</p>
-            <a href="tel:+375339161619" className={"Feedback__phone"}>+375 (33) 916 16 19</a>
+            <p className={"text_phone"}>Или позвоните нам прямо сейчас</p>
+            <a href="tel:+375339161619" className={"phone"}>+375 (33) 916 16 19</a>
         </div>
     );
 }
