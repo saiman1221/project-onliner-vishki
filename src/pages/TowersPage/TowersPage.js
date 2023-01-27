@@ -17,7 +17,7 @@ export function TowersPage(props){
 
     return (
         <div className="TowersPage">
-            <FirstScreen page={'towers'} modal={setModalActive} content={props.pageContent.first_screen}/>
+            <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <Cards modal={setModalActive}/>
             <ProductInfoTable/>
             <Feedback/>
