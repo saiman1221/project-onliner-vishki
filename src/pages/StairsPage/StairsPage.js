@@ -19,11 +19,11 @@ export function StairsPage(props){
         <div className="StairsPage">
             <FirstScreen page={'stairs'} modal={setModalActive} content={props.pageContent.first_screen}/>
             <Cards modal={setModalActive}/>
-            <ProductInfoTable/>
+            {/*<ProductInfoTable/>*/}
             <Feedback/>
-            <SpecificationsTable/>
+            {/*<SpecificationsTable/>*/}
             <Benefits/>
-            <Manual/>
+            {/*<Manual/>*/}
             <VideoManual/>
             <Questions/>
             <Footer modal={setModalActive}/>

@@ -1,0 +1,12 @@
+.Specifications_table{
+    max-width: 718px;
+    margin: 40px auto 74px auto;
+}
+
+.Specifications_table tr:nth-child(2n+1){
+    background: #ECF6FF;
+}
+
+.Specifications_table tr:nth-child(2n+1):hover{
+    background: #dce8fc;
+}

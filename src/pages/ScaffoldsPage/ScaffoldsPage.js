@@ -19,11 +19,11 @@ export function ScaffoldsPage(props){
         <div className="ScaffoldsPage">
             <FirstScreen page={'scaffolds'} modal={setModalActive} content={props.pageContent.first_screen}/>
             <Cards modal={setModalActive}/>
-            <ProductInfoTable/>
+            {/*<ProductInfoTable/>*/}
             <Feedback/>
-            <SpecificationsTable/>
+            {/*<SpecificationsTable/>*/}
             <Benefits/>
-            <Manual/>
+            {/*<Manual/>*/}
             <VideoManual/>
             <Questions/>
             <Footer modal={setModalActive}/>

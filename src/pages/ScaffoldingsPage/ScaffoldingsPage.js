@@ -16,9 +16,9 @@ export function ScaffoldingsPage(props){
         <div className="ScaffoldingsPage">
             <FirstScreen page={'scaffoldings'} modal={setModalActive} content={props.pageContent.first_screen}/>
             <AboutProduct/>
+            <SpecificationsTable content={props.pageContent.spec_table}/>
             <Prices/>
             <LinksBar/>
-            <SpecificationsTable content={props.pageContent.spec_table}/>
             <Feedback/>
             <Manual content={props.pageContent.manual}/>
             <Footer/>

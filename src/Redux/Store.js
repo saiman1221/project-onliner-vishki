@@ -4,7 +4,7 @@ export const store = {
     'pagesContent': {
         'towers' : {
             'first_screen' : {
-                'title': 'Аренда вышек туры в Минске',
+                'title': 'Аренда строительных вышек тур в Минске',
                 'links' : [
                     {
                         'linkText': 'Аренда лесов',
@@ -19,7 +19,8 @@ export const store = {
                         'link': '/scaffolds'
                     }
                 ],
-                'bcPhoto': ''
+                'bcPhoto': '',
+                'className': 'towers'
             },
             'spec_table' : [
                 ['Параметр','Вышка тура ВСР-1','Вышка тура ВСР-4','Вышка тура ВСР-7'],
@@ -76,7 +77,8 @@ export const store = {
                         'link': '/scaffolds'
                     }
                 ],
-                'bcPhoto': ''
+                'bcPhoto': '',
+                'className': 'scaffoldings'
             },
             'spec_table' : [
                 ['Наименование элемента рамных лесов ЛРСП','Габаритный размер элемента, мм','Масса элемента ЛРСП-40, кг'],
@@ -138,12 +140,13 @@ export const store = {
                         'link': '/scaffolds'
                     }
                 ],
-                'bcPhoto': ''
+                'bcPhoto': '',
+                'className': 'stairs'
             }
         },
         'scaffolds' : {
             'first_screen' : {
-                'title': 'Аренда помостов в Минске',
+                'title': 'Аренда строительных помостов в Минске',
                 'links' : [
                     {
                         'linkText': 'Аренда вышек',
@@ -158,7 +161,8 @@ export const store = {
                         'link': '/stairs'
                     },
                 ],
-                'bcPhoto': ''
+                'bcPhoto': '',
+                'className': 'scaffolds'
             }
         }
     }
