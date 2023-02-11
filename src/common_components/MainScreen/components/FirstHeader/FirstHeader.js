@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import {NavLink} from "react-router-dom";
+
 import './FirstHeader.css';
+
 import logo from './images/logo.svg';
 
 export function FirstHeader() {
@@ -16,7 +19,7 @@ export function FirstHeader() {
         <header className={sticky ? "First_header fixed" : "First_header"} id='first_header'>
             <div className='container'>
                 <div className={"display"}>
-                    <img src={logo} alt="Логотип"/>
+                    <NavLink to={'/'}><img src={logo} alt="Логотип"/></NavLink>
                     <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#prices" className={'links'}>Стоимость</a>
                     <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#product_info">Комплектация</a>
                     <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#manual">Инструкция по сборке</a>

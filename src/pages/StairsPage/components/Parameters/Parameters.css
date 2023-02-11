@@ -1,0 +1,134 @@
+.Parameters{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+
+.Parameters h3{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+
+    text-transform: initial;
+    margin-bottom: 30px;
+}
+
+.Parameters ul{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+
+    margin-bottom: 55px;
+    width: 715px;
+    padding-left: 20px;
+}
+
+.Parameters .title{
+    display: flex;
+    align-items: center;
+}
+
+.Parameters .title h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+    min-width: 374px;
+    margin: 0 28px;
+}
+
+.Parameters .title div{
+    width: 100%;
+    height: 1px;
+    background-color: #A5A5A5;
+
+}
+
+.Parameters .characteristics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.Parameters .characteristics .Table table{
+    width: auto;
+    text-align: right;
+}
+
+.Parameters .characteristics .Table tr:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.Parameters .characteristics .Table td{
+    padding: 12px 30px;
+    border: none;
+}
+
+.Parameters .characteristics .Table td:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.001em;
+    color: #000000;
+    text-align: left;
+    padding: 10px 50px 10px 20px;
+}
+
+.Parameters .characteristics img{
+    width: 212px;
+    height: 370px;
+    background-color: #AF0000;
+}
+
+.Parameters .prices{
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 130px auto;
+}
+
+.Parameters .prices .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+}
+
+.Parameters .prices .Table{
+    margin: 0;
+    width: 100%;
+}
+
+.Parameters .prices .Table table{
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Parameters .prices .Table tr:nth-child(1){
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.Parameters .prices .Table td{
+    padding: 17px 0;
+    border: none;
+    width: auto;
+}
+
+.Parameters .prices .Table td:nth-child(1){
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 35px;
+
+}

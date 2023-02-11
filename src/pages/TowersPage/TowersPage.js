@@ -1,16 +1,16 @@
 import React, {useState} from "react";
-import {FirstScreen} from "../../components/MainScreen/FirstScreen";
-import {Cards} from "../../components/Cards/Cards";
-import {ProductInfoTable} from "../../components/ProductInfoTable/ProductInfotable";
-import {Feedback} from "../../components/Feedback/Feedback";
-import {SpecificationsTable} from "../../components/SpecificationsTable/SpecificationsTable";
-import {Benefits} from "../../components/Benefits/Benefits";
-import {Manual} from "../../components/Manual/Manual";
-import {VideoManual} from "../../components/VideoManual/VideoManual";
-import {Questions} from "../../components/Questions/Questions";
-import {Footer} from "../../components/Footer/Footer";
-import {YandexMaps} from "../../components/YandexMaps/YandexMaps";
-import Modal from "../../components/Modal/Modal";
+
+import {VideoManual} from "./components/VideoManual/VideoManual";
+import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
+import Modal from "../../common_components/Modal/Modal";
+import {Feedback} from "../../common_components/Feedback/Feedback";
+import {Manual} from "../../common_components/Manual/Manual";
+import {Footer} from "../../common_components/Footer/Footer";
+import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
+import {Questions} from "./components/Questions/Questions";
+import {Benefits} from "./components/Benefits/Benefits";
+import {Cards} from "./components/Cards/Cards";
+import {Table} from "../../common_components/Table/Table";
 
 export function TowersPage(props){
     const [modalActive, setModalActive] = useState(false);
@@ -19,9 +19,9 @@ export function TowersPage(props){
         <div className="TowersPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <Cards modal={setModalActive}/>
-            <ProductInfoTable/>
+            <Table content={props.pageContent.product_info_table} className={'product_info'}/>
             <Feedback/>
-            <SpecificationsTable content={props.pageContent.spec_table}/>
+            <Table content={props.pageContent.spec_table} className={'product_spec'}/>
             <Benefits/>
             <Manual content={props.pageContent.manual}/>
             <VideoManual/>

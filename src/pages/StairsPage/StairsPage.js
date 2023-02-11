@@ -1,34 +1,87 @@
 import React, {useState} from "react"
-import {FirstScreen} from "../../components/MainScreen/FirstScreen";
-import {Cards} from "../../components/Cards/Cards";
-import {ProductInfoTable} from "../../components/ProductInfoTable/ProductInfotable";
-import {Feedback} from "../../components/Feedback/Feedback";
-import {SpecificationsTable} from "../../components/SpecificationsTable/SpecificationsTable";
-import {Benefits} from "../../components/Benefits/Benefits";
-import {Manual} from "../../components/Manual/Manual";
-import {VideoManual} from "../../components/VideoManual/VideoManual";
-import {Questions} from "../../components/Questions/Questions";
-import {Footer} from "../../components/Footer/Footer";
-import {YandexMaps} from "../../components/YandexMaps/YandexMaps";
-import Modal from "../../components/Modal/Modal";
 
-export function StairsPage(props){
+import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
+import {Products} from "./components/Products/Products";
+import {Parameters} from "./components/Parameters/Parameters";
+
+
+export function StairsPage(props) {
     const [modalActive, setModalActive] = useState(false);
+
+    const stairsData = [
+        {
+            'title': 'Стремянка алюминиевая',
+            'list': ['Многоцелевые конструкции с односторонним вхождением.', 'Легко раскладываются.', 'Имеют небольшой вес.', 'Устойчивость обеспечивают заглушки на ножках и ступени с глубоким рифлением. Предназначены для работы в помещениях и на открытых пространствах.'],
+            'paramsTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['Кол-во ступеней', '3', '4', '5', '8'],
+                    ['Высота, м', '0,6', '0,82', '1,03', '1,66'],
+                    ['Длина, м', '1,3', '1,53', '1,75', '2,44'],
+                    ['Высота (max), м', '2,7', '2,9', '3,1', '3,7'],
+                    ['Ширина, см', '42', '44', '46', '54'],
+                    ['Вес, кг', '2,8', '3,3', '3,8', '5,9']
+                ]
+            },
+            'pricesTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['1 сутки', '3 руб', '4 руб', '5 руб', '8 руб'],
+                    ['7 суток', '21 руб', '28 руб', '35 руб', '56 руб']
+                ]
+            }
+        },
+        {
+            'title': 'Лестница алюминиевая 3-х секционная',
+            'list': ['Универсальные конструкции с раздвижными элементами.', 'Секции фиксируются ремнями безопасности для защиты от непредвиденного складывания.', 'Могут принимать вид Л-образной стремянки.', 'Верхнюю секцию можно использовать как отдельную приставную лестницу.', 'Предусмотрены пластиковые ребристые накладки в местах прилегания к поверхности.', 'Устойчивость обеспечивает траверса с противоскользящими резиновыми наконечниками.'],
+            'paramsTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['Кол-во ступеней', '3', '4', '5', '8'],
+                    ['Высота, м', '0,6', '0,82', '1,03', '1,66'],
+                    ['Длина, м', '1,3', '1,53', '1,75', '2,44'],
+                    ['Высота (max), м', '2,7', '2,9', '3,1', '3,7'],
+                    ['Ширина, см', '42', '44', '46', '54'],
+                    ['Вес, кг', '2,8', '3,3', '3,8', '5,9']
+                ]
+            },
+            'pricesTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['1 сутки', '3 руб', '4 руб', '5 руб', '8 руб'],
+                    ['7 суток', '21 руб', '28 руб', '35 руб', '56 руб']
+                ]
+            }
+        },
+        {
+            'title': 'Лестница алюминиевая 4-х секционная',
+            'list': ['Состоит из четырех секций с 3-мя и более ступенями в зависимости от модели.', 'Имеет расширенные ступени с покрытием из рифленого алюминия.', 'Устойчивость обеспечивают противоскользящие прорезиненные накладки.', 'Оснащены механизмом от произвольного складывания.', 'Оборудование может трансформироваться в двухстороннюю стремянку, приставную и Г-образную лестницу, подмост.'],
+            'paramsTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['Кол-во ступеней', '3', '4', '5', '8'],
+                    ['Высота, м', '0,6', '0,82', '1,03', '1,66'],
+                    ['Длина, м', '1,3', '1,53', '1,75', '2,44'],
+                    ['Высота (max), м', '2,7', '2,9', '3,1', '3,7'],
+                    ['Ширина, см', '42', '44', '46', '54'],
+                    ['Вес, кг', '2,8', '3,3', '3,8', '5,9']
+                ]
+            },
+            'pricesTable': {
+                'table': [
+                    ['', 'Ам703', 'Ам704', 'Ам705', 'Ам708'],
+                    ['1 сутки', '3 руб', '4 руб', '5 руб', '8 руб'],
+                    ['7 суток', '21 руб', '28 руб', '35 руб', '56 руб']
+                ]
+            }
+        }
+    ];
 
     return (
         <div className="StairsPage">
             <FirstScreen page={'stairs'} modal={setModalActive} content={props.pageContent.first_screen}/>
-            <Cards modal={setModalActive}/>
-            {/*<ProductInfoTable/>*/}
-            <Feedback/>
-            {/*<SpecificationsTable/>*/}
-            <Benefits/>
-            {/*<Manual/>*/}
-            <VideoManual/>
-            <Questions/>
-            <Footer modal={setModalActive}/>
-            <YandexMaps/>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            <Products/>
+            {stairsData.map(el => <Parameters content={el}/>)}
         </div>
     );
 }

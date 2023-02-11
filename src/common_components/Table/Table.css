@@ -1,8 +1,8 @@
-.Product_info_table{
+.Table{
     margin-bottom: 64px;
 }
 
-.Product_info_table h2{
+.Table h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,7 +12,7 @@
     margin-bottom: 40px;
 }
 
-.Product_info_table table{
+.Table table{
     background: none;
     width: 100%;
     text-align: center;
@@ -27,7 +27,7 @@
     border-radius: 7px;
 }
 
-.Product_info_table table tr:nth-child(1){
+.Table table tr:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -36,54 +36,69 @@
     color: #000000;
 }
 
-.Product_info_table td{
+.Table td{
     padding: 12px 0;
     border-right: 2px solid #fff;
 }
 
-.Product_info_table td:last-child{
+.Table td:last-child{
     border: none;
 }
 
-.Product_info_table td:nth-child(1){
+.Table td:nth-child(1){
     text-align: left;
     padding-left: 15px;
 }
 
-.Product_info_table tr{
+.Table tr{
     overflow-x: hidden;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.Product_info_table tr:nth-child(2n){
+.Table tr:nth-child(2n){
     background: #FFFCFC;
 }
 
-.Product_info_table tr:nth-child(2n+1){
-    background: #FFF5E5;
+.Table tr:nth-child(2n+1){
+    /*background: #FFF5E5;*/
+    background: rgba(182, 202, 235, 0.27);
+
 }
 
-.Product_info_table tr:nth-child(2n):hover{
-    background: rgb(250,247,247);
-}
+/*.Table tr:nth-child(2n):hover{*/
+/*    background: rgb(250,247,247);*/
+/*}*/
 
-.Product_info_table tr:nth-child(2n+1):hover{
-    background: rgb(2545,235,219);
-}
+/*.Table tr:nth-child(2n+1):hover{*/
+/*    background: rgb(2545,235,219);*/
+/*}*/
 
-.Product_info_table tr:nth-child(1) td:nth-child(1){
+.Table tr:nth-child(1) td:nth-child(1){
     border-top-left-radius: 7px;
 }
 
-.Product_info_table tr:nth-child(1) td:last-child{
+.Table tr:nth-child(1) td:last-child{
     border-top-right-radius: 7px;
 }
 
-.Product_info_table tr:last-child td:nth-child(1){
+.Table tr:last-child td:nth-child(1){
     border-bottom-left-radius: 7px;
 }
 
-.Product_info_table tr:last-child td:last-child{
+.Table tr:last-child td:last-child{
     border-bottom-right-radius: 7px;
 }
+
+.Table.product_spec table{
+    max-width: 718px;
+    margin: 40px auto 74px auto;
+}
+
+/*.Table.product_spec tr:nth-child(2n+1){*/
+/*    background: #ECF6FF;*/
+/*}*/
+
+/*.Table.product_spec tr:nth-child(2n+1):hover{*/
+/*    background: #dce8fc;*/
+/*}*/

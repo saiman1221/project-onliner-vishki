@@ -1,13 +1,14 @@
 import React, {useState} from "react"
-import {FirstScreen} from "../../components/MainScreen/FirstScreen";
-import Modal from "../../components/Modal/Modal";
-import {AboutProduct} from "../../components/AboutProduct/AboutProduct";
-import {Prices} from "../../components/Prices/Prices";
-import {LinksBar} from "../../components/LinksBar/LinksBar";
-import {SpecificationsTable} from "../../components/SpecificationsTable/SpecificationsTable";
-import {Feedback} from "../../components/Feedback/Feedback";
-import {Manual} from "../../components/Manual/Manual";
-import {Footer} from "../../components/Footer/Footer";
+
+import {Prices} from "../TowersPage/components/Prices/Prices";
+import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
+import {LinksBar} from "../../common_components/LinksBar/LinksBar";
+import {Feedback} from "../../common_components/Feedback/Feedback";
+import {Manual} from "../../common_components/Manual/Manual";
+import {Footer} from "../../common_components/Footer/Footer";
+import Modal from "../../common_components/Modal/Modal";
+import {AboutProduct} from "./components/AboutProduct/AboutProduct";
+import {Table} from "../../common_components/Table/Table";
 
 export function ScaffoldingsPage(props){
     const [modalActive, setModalActive] = useState(false);
@@ -16,7 +17,7 @@ export function ScaffoldingsPage(props){
         <div className="ScaffoldingsPage">
             <FirstScreen page={'scaffoldings'} modal={setModalActive} content={props.pageContent.first_screen}/>
             <AboutProduct/>
-            <SpecificationsTable content={props.pageContent.spec_table}/>
+            <Table content={props.pageContent.spec_table} className={'product_spec'}/>
             <Prices/>
             <LinksBar/>
             <Feedback/>
