@@ -3,8 +3,6 @@ import './Parameters.css'
 import {Table} from "../../../../common_components/Table/Table";
 
 export function Parameters(props) {
-
-
     return (
         <div className="Parameters">
             <div className={'container'}>
@@ -14,7 +12,7 @@ export function Parameters(props) {
             <div className={'title'}><div/><h4>Технические характеристики</h4><div/></div>
             <div className={'characteristics  container'}>
                 <Table content={props.content.paramsTable}/>
-                <img src="" alt=""/>
+                <img src={props.photo} alt="Фото лестницы"/>
             </div>
             <div className={'title'}><div/><h4>Стоимость</h4><div/></div>
             <div className={'prices container'}>

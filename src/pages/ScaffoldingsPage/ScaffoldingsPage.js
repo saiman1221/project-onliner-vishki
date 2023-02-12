@@ -6,7 +6,7 @@ import {LinksBar} from "../../common_components/LinksBar/LinksBar";
 import {Feedback} from "../../common_components/Feedback/Feedback";
 import {Manual} from "../../common_components/Manual/Manual";
 import {Footer} from "../../common_components/Footer/Footer";
-import Modal from "../../common_components/Modal/Modal";
+import {Modal} from "../../common_components/Modal/Modal";
 import {AboutProduct} from "./components/AboutProduct/AboutProduct";
 import {Table} from "../../common_components/Table/Table";
 

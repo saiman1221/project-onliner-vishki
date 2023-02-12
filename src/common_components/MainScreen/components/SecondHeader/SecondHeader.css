@@ -1,9 +1,8 @@
 .Second_header{
     width: 100%;
-    background: red;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.7);
     height: 40px;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .Second_header .display{

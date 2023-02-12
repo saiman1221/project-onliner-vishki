@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import {VideoManual} from "./components/VideoManual/VideoManual";
 import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
-import Modal from "../../common_components/Modal/Modal";
+import {Modal} from "../../common_components/Modal/Modal";
 import {Feedback} from "../../common_components/Feedback/Feedback";
 import {Manual} from "../../common_components/Manual/Manual";
 import {Footer} from "../../common_components/Footer/Footer";

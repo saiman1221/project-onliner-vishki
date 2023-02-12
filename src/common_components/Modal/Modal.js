@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 import './Modal.css';
 
-const Modal = (props) => {
+export const Modal = (props) => {
     const form = useRef();
     const [buttonActive, setButtonActive] = useState(false);
 
@@ -92,5 +92,3 @@ const Modal = (props) => {
         </div>
     )
 }
-
-export default Modal;

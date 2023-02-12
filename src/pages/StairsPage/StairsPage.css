@@ -1,1 +1,3 @@
-
+.StairsPage .Parameters:nth-child(2n) .characteristics{
+    flex-direction: row-reverse;
+}
