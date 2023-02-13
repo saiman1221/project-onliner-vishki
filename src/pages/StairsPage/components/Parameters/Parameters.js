@@ -11,7 +11,9 @@ export function Parameters(props) {
             </div>
             <div className={'title'}><div/><h4>Технические характеристики</h4><div/></div>
             <div className={'characteristics  container'}>
-                <Table content={props.content.paramsTable}/>
+                <div className={'table'}>
+                    <Table content={props.content.paramsTable}/>
+                </div>
                 <img src={props.photo} alt="Фото лестницы"/>
             </div>
             <div className={'title'}><div/><h4>Стоимость</h4><div/></div>

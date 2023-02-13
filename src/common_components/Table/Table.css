@@ -1,5 +1,5 @@
 .Table{
-    margin-bottom: 64px;
+    width: 100%;
 }
 
 .Table h2{
@@ -12,11 +12,15 @@
     margin-bottom: 40px;
 }
 
+.Table h2.disable{
+    display: none;
+}
+
 .Table table{
     background: none;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 40px 0 rgba(57, 57, 57, 0.05);
+    box-shadow: 0 0 30px rgba(236, 242, 244, 0.1);
     border-collapse: collapse;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -24,55 +28,45 @@
     font-size: 12px;
     line-height: 130%;
     color: #000000;
-    border-radius: 7px;
 }
 
-.Table table tr:nth-child(1){
+.Table thead tr{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-}
-
-.Table td{
-    padding: 12px 0;
-    border-right: 2px solid #fff;
-}
-
-.Table td:last-child{
-    border: none;
+    background: #F1F6FF;
 }
 
 .Table td:nth-child(1){
     text-align: left;
-    padding-left: 15px;
 }
 
-.Table tr{
-    overflow-x: hidden;
-    cursor: pointer;
+.Table td{
+    text-align: right;
+}
+
+.Table thead tr td{
+    padding: 22px 10px;
+}
+
+.Table tbody tr{
     transition: 0.2s;
 }
 
-.Table tr:nth-child(2n){
-    background: #FFFCFC;
+.Table tbody tr:nth-child(2n){
+    background: #FBFCFF;
 }
 
-.Table tr:nth-child(2n+1){
-    /*background: #FFF5E5;*/
-    background: rgba(182, 202, 235, 0.27);
-
+.Table tbody tr:nth-child(2n+1){
+    background: #FFF;
 }
 
-/*.Table tr:nth-child(2n):hover{*/
-/*    background: rgb(250,247,247);*/
-/*}*/
-
-/*.Table tr:nth-child(2n+1):hover{*/
-/*    background: rgb(2545,235,219);*/
-/*}*/
+.Table tbody tr:hover{
+    background: rgba(250,247,247, 0.27);
+}
 
 .Table tr:nth-child(1) td:nth-child(1){
     border-top-left-radius: 7px;
@@ -90,15 +84,6 @@
     border-bottom-right-radius: 7px;
 }
 
-.Table.product_spec table{
-    max-width: 718px;
-    margin: 40px auto 74px auto;
+.Table tbody tr td{
+    padding: 18px 20px;
 }
-
-/*.Table.product_spec tr:nth-child(2n+1){*/
-/*    background: #ECF6FF;*/
-/*}*/
-
-/*.Table.product_spec tr:nth-child(2n+1):hover{*/
-/*    background: #dce8fc;*/
-/*}*/
