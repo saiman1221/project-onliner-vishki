@@ -9,6 +9,9 @@ import {Modal} from "../../common_components/Modal/Modal";
 import img1 from'./images/img1.png';
 import img2 from'./images/img2.png';
 import img3 from'./images/img3.png';
+import {Form} from "../../common_components/Form/Form";
+import {Footer} from "../../common_components/Footer/Footer";
+import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
 
 export function StairsPage(props) {
     const [modalActive, setModalActive] = useState(false);
@@ -19,6 +22,9 @@ export function StairsPage(props) {
             <FirstScreen modal={setModalActive} content={props.pageContent.first_screen}/>
             <Products/>
             {props.pageContent.stairs_data.map((el, index) => <Parameters content={el} photo={images[index]}/>)}
+            <Form/>
+            <Footer/>
+            <YandexMaps/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     );

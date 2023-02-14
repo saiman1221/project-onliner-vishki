@@ -1,1 +1,8 @@
+.ScaffoldingsPage_table{
+    margin-bottom: 100px;
+}
 
+.ScaffoldingsPage_table table{
+    width: 70%;
+    margin: 0 auto;
+}

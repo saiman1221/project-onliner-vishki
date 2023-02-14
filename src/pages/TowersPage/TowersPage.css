@@ -1,0 +1,8 @@
+.TowersPage .TowersPage__table.product_info_table{
+    margin-bottom: 100px;
+}
+
+.TowersPage .TowersPage__table.spec_table table{
+    margin: 0 auto;
+    width: 700px;
+}

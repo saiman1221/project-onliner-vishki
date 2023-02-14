@@ -1,4 +1,5 @@
-import React, {useState} from "react"
+import React, {useState} from "react";
+import './ScaffoldingsPage.css';
 
 import {Prices} from "../TowersPage/components/Prices/Prices";
 import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
@@ -15,11 +16,13 @@ export function ScaffoldingsPage(props){
 
     return (
         <div className="ScaffoldingsPage">
-            <FirstScreen page={'scaffoldings'} modal={setModalActive} content={props.pageContent.first_screen}/>
+            <FirstScreen modal={setModalActive} content={props.pageContent.first_screen}/>
             <AboutProduct/>
-            <Table content={props.pageContent.spec_table} className={'product_spec'}/>
+            <div className={'container ScaffoldingsPage_table'}>
+                <Table content={props.pageContent.spec_table} className={'product_spec'}/>
+            </div>
             <Prices/>
-            <LinksBar/>
+            <LinksBar content={props.pageContent.first_screen}/>
             <Feedback/>
             <Manual content={props.pageContent.manual}/>
             <Footer/>
