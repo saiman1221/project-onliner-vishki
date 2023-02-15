@@ -1,7 +1,8 @@
 .Links_bar{
     width: 100%;
-    padding: 30px 0;
+    padding: 56px 0;
     margin-bottom: 70px;
+    background: #FDFDFD;
 }
 
 .Links_bar .content{

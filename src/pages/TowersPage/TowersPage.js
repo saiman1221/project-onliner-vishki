@@ -13,6 +13,7 @@ import {Benefits} from "./components/Benefits/Benefits";
 import {Cards} from "./components/Cards/Cards";
 import {Table} from "../../common_components/Table/Table";
 import {LinksBar} from "../../common_components/LinksBar/LinksBar";
+import {Form} from "../../common_components/Form/Form";
 
 export function TowersPage(props){
     const [modalActive, setModalActive] = useState(false);
@@ -30,7 +31,7 @@ export function TowersPage(props){
             <div className={'TowersPage__table spec_table container'}>
                 <Table content={props.pageContent.spec_table}/>
             </div>
-
+            <Form/>
             <Manual content={props.pageContent.manual}/>
             <VideoManual/>
             <Questions/>
