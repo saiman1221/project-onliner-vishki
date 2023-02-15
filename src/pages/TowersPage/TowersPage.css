@@ -2,7 +2,26 @@
     margin-bottom: 100px;
 }
 
+.TowersPage .TowersPage__table.product_info_table thead tr td{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: -0.025em;
+    color: #000000;
+}
+
+.TowersPage .TowersPage__table.product_info_table tbody td:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000000;
+}
+
 .TowersPage .TowersPage__table.spec_table table{
-    margin: 0 auto;
+    margin: 100px auto;
     width: 700px;
 }

@@ -75,21 +75,18 @@
 
 }
 
-
-
-
-/*.First_screen.tower > .layout > .header .First_header{*/
-
-/*}*/
-/*.First_screen.scaffoldings > .layout > .header .First_header{*/
-
-/*}*/
-/*.First_screen.stairs > .layout > .header .First_header{*/
-
-/*}*/
-/*.First_screen.scaffolds > .layout > .header .First_header{*/
-
-/*}*/
+.First_screen.towers > .layout > .header .First_header{
+    background: rgba(40, 63, 81, 0.78);
+}
+.First_screen.scaffoldings > .layout > .header .First_header{
+    background: rgba(15, 25, 38, 0.5);
+}
+.First_screen.stairs > .layout > .header .First_header{
+    background: rgba(15, 25, 38, 0.5);
+}
+.First_screen.scaffolds > .layout > .header .First_header{
+    background: rgba(15, 25, 38, 0.7);
+}
 
 /*.First_screen.tower > .layout > .header .First_header.fixed{}*/
 /*.First_screen.scaffoldings > .layout > .header .First_header.fixed{}*/

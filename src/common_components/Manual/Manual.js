@@ -10,9 +10,9 @@ import img5 from './images/img5.png';
 export function Manual(props) {
     return (
         <div className={'Manual container'}>
-            <h2>Инструкция по сборке вышки туры</h2>
+            <h2>{props.content.title}</h2>
             <div className={'cards'}>
-                {props.content.map((el, id) => (
+                {props.content.text.map((el, id) => (
                     <div className={'card'}>
                         <p className={'number'}><p className={'number back'}>0{id + 1}</p>0{id + 1}</p>
                         <div className={'text'}>
