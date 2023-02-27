@@ -9,6 +9,7 @@ export function Parameters(props) {
                 <h3>{props.content.title}</h3>
                 <ul>{props.content.list.map(el => <li>{el}</li>)}</ul>
             </div>
+            <img src={props.photo} className={'display_mobil'} alt="Фото лестницы"/>
             <div className={'title'}><div/><h4>Технические характеристики</h4><div/></div>
             <div className={'characteristics  container'}>
                 <div className={'table'}>

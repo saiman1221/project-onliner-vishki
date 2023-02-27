@@ -45,15 +45,14 @@ export function Feedback() {
         setButtonActive(true);
         setTimeout(() => {
             if (userName && userPhone.length === 17) {
-                // emailjs.sendForm('service_3h9i74t', 'template_2raobfu', form.current, 'iRtzOZ-9E05qG4kZV')
-                //     .then((result) => {
-                //         alert('Заказ оформлен успешно...')
-                //         console.log(result.text);
-                //     }, (error) => {
-                //         alert('К сожалению, возникли неполадки...')
-                //         console.log(error.text);
-                //     });
-                alert('Ok')
+                emailjs.sendForm('service_3h9i74t', 'template_2raobfu', form.current, 'iRtzOZ-9E05qG4kZV')
+                    .then((result) => {
+                        alert('Заказ оформлен успешно...')
+                        console.log(result.text);
+                    }, (error) => {
+                        alert('К сожалению, возникли неполадки...')
+                        console.log(error.text);
+                    });
             }
             else {
                 alert('Номер телефона введен неправильно или не полностью...')

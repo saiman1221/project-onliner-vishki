@@ -45,19 +45,18 @@ export const Modal = (props) => {
         setButtonActive(true);
         setTimeout(() => {
             if (userName && userPhone.length === 17) {
-                // emailjs.sendForm('service_3h9i74t', 'template_2raobfu', form.current, 'iRtzOZ-9E05qG4kZV')
-                //     .then((result) => {
-                //         alert('Заказ оформлен успешно...')
-                //         console.log(result.text);
-                //         props.setActive(false)
-                //     }, (error) => {
-                //         alert('К сожалению, возникли неполадки...')
-                //         console.log(error.text);
-                //     });
+                emailjs.sendForm('service_3h9i74t', 'template_2raobfu', form.current, 'iRtzOZ-9E05qG4kZV')
+                    .then((result) => {
+                        alert('Заказ оформлен успешно...')
+                        console.log(result.text);
+                        props.setActive(false)
+                    }, (error) => {
+                        alert('К сожалению, возникли неполадки...')
+                        console.log(error.text);
+                    });
                 props.setActive(false);
-                alert('Заказ оформлен успешно...')
             } else {
-                alert('Номер телефона введен неправильно или не полностью...')
+                alert('Проверьте правильность введенных данных...')
             }
             setButtonActive(false)
         }, 400);

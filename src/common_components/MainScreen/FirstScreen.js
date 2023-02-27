@@ -1,10 +1,9 @@
 import React from "react";
-
 import './FirstScreen.css';
 
 import {FirstHeader} from "./components/FirstHeader/FirstHeader";
-import {SecondHeader} from "./components/SecondHeader/SecondHeader";
 import {FirstHeaderMobil} from "./components/FirstHeaderMobil/FirstHeaderMobil";
+import {SecondHeader} from "./components/SecondHeader/SecondHeader";
 import {Links} from "./components/Links/Links";
 
 export function FirstScreen(props) {

@@ -1,13 +1,15 @@
 import React from "react";
 import './Manual.css';
 
-import img1 from './images/img1.png';
-import img2 from './images/img2.png';
-import img3 from './images/img3.png';
-import img4 from './images/img4.png';
-import img5 from './images/img5.png';
-
 export function Manual(props) {
+    const tryRequire = (path) => {
+        try {
+            return require(`${path}`);
+        } catch (err) {
+            return null;
+        }
+    };
+
     return (
         <div className={'Manual container'}>
             <h2>{props.content.title}</h2>
@@ -17,7 +19,7 @@ export function Manual(props) {
                         <p className={'number'}><p className={'number back'}>0{id + 1}</p>0{id + 1}</p>
                         <div className={'text'}>
                             {el.text}
-                            {/*<img src={el.imgUrl} alt="Фото"/>*/}
+                            {tryRequire(`./images/${props.content.page_name}/img${id+1}.png`) ? <img src={tryRequire(`./images/${props.content.page_name}/img${id+1}.png`)} alt="Фото"/> : ''}
                         </div>
                     </div>
                 ))}
@@ -25,3 +27,4 @@ export function Manual(props) {
         </div>
     );
 }
+

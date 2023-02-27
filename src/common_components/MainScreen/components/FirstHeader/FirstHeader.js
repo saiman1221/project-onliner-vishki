@@ -1,28 +1,38 @@
 import React, {useState} from "react";
-import {NavLink} from "react-router-dom";
 import './FirstHeader.css';
-import logo from './images/logo.svg';
+import logo from './images/logoMin.svg';
 
-export function FirstHeader() {
-    const [sticky, setSticky] = useState(false);
-
-    // window.addEventListener('scroll', () => {
-    //     let headerHeight = getComputedStyle(document.getElementById('first_header')).height;
-    //     if (window.visualViewport.pageTop - 100 > headerHeight.substring(0, headerHeight.length - 2)) {
-    //         setSticky(true);
-    //     } else if (window.visualViewport.pageTop === 0) setSticky(false);
-    // });
+export const FirstHeader = () => {
+    let header = React.createRef();
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop < 40) {
+            if(document.documentElement.scrollTop > 5){
+                header.current.classList.add('fixed');
+            }
+            else{
+                header.current.classList.remove('fixed');
+            }
+            header.current.style.height = `${90 - document.documentElement.scrollTop}px`;
+        }
+        else{
+            header.current.classList.add('fixed');
+            header.current.style.height = '50px';
+        }
+    })
 
     return (
-        <header className={sticky ? "First_header fixed" : "First_header"} id='first_header'>
+        <header className="First_header" ref={header}>
             <div className='display container'>
-                <NavLink to={'/'}><img src={logo} alt="Логотип"/></NavLink>
-                <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#prices">Стоимость</a>
-                <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#product_info">Комплектация</a>
-                <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#manual">Инструкция по сборке</a>
-                <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#questions">Вопросы</a>
-                <a href="src/components/FirstScreen/components/FirstHeader/FirstHeader#footer">Контакты</a>
+                <div className={'logo'} onClick={()=>{window.scrollTo(0,0)}}>
+                    <img src={logo} alt="Логотип"/>
+                    <p>ArendaTur</p>
+                </div>
+                <a href="#prices">Стоимость</a>
+                <a href="#product_info">Комплектация</a>
+                <a href="#manual">Инструкция по сборке</a>
+                <a href="#questions">Вопросы</a>
+                <a href="#footer">Контакты</a>
             </div>
         </header>
-    );
+    )
 }

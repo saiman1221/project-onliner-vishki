@@ -1,8 +1,12 @@
-.TowersPage .TowersPage__table.product_info_table{
+.TowersPage .product_info_table{
     margin-bottom: 100px;
 }
 
-.TowersPage .TowersPage__table.product_info_table thead tr td{
+.TowersPage .product_info_table td{
+    padding: 15px 10px;
+}
+
+.TowersPage .product_info_table thead tr td{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -12,7 +16,7 @@
     color: #000000;
 }
 
-.TowersPage .TowersPage__table.product_info_table tbody td:nth-child(1){
+.TowersPage .product_info_table tbody td:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -21,7 +25,7 @@
     color: #000000;
 }
 
-.TowersPage .TowersPage__table.spec_table table{
+.TowersPage .spec_table table{
     margin: 100px auto;
     width: 80%;
 }

@@ -8,14 +8,16 @@ import {StairsPage} from "./pages/StairsPage/StairsPage";
 
 export function App(props) {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path={'/'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
-                <Route path={'/towers'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
-                <Route path={'/scaffoldings'} element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
-                <Route path={'/scaffolds'} element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
-                <Route path={'/stairs'} element={<StairsPage pageContent={props.store.pagesContent.stairs}/>}/>
-            </Routes>
-        </BrowserRouter>
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path={'/'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
+                    <Route path={'/towers'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
+                    <Route path={'/scaffoldings'} element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
+                    <Route path={'/scaffolds'} element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
+                    <Route path={'/stairs'} element={<StairsPage pageContent={props.store.pagesContent.stairs}/>}/>
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }

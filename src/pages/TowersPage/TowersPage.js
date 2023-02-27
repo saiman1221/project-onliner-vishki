@@ -22,21 +22,21 @@ export function TowersPage(props){
         <div className="TowersPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <Cards modal={setModalActive}/>
-            <div className={'TowersPage__table product_info_table container'}>
-                <Table content={props.pageContent.product_info_table} className={'product_info'}/>
+            <div className={'product_info_table container'}>
+                <Table content={props.pageContent.product_info_table}/>
             </div>
             <Benefits/>
-            <LinksBar content={props.pageContent.first_screen}/>
-            <Feedback/>
-            <div className={'TowersPage__table spec_table container'}>
+            <div className={'spec_table container'}>
                 <Table content={props.pageContent.spec_table}/>
             </div>
             <Form/>
+            <LinksBar content={props.pageContent.first_screen}/>
             <Manual content={props.pageContent.manual}/>
             <VideoManual/>
+            <Feedback/>
             <Questions/>
             <Footer modal={setModalActive}/>
-            <YandexMaps/>
+            <YandexMaps address={props.pageContent.mapData}/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     );

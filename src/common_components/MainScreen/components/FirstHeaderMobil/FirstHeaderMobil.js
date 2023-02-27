@@ -7,15 +7,6 @@ export function FirstHeaderMobil() {
     const [burgerMenu, setBurgerMenu] = useState(false);
     const [sticky, setSticky] = useState(false);
 
-    window.addEventListener('scroll', handleScroll);
-
-    function handleScroll(){
-        let headerHeight = getComputedStyle(document.getElementById('first_header_mobil')).height;
-        if(window.visualViewport.pageTop - 100 > headerHeight.substring(0, headerHeight.length - 2)){
-            setSticky(true);
-        } else if(window.visualViewport.pageTop < 15) setSticky(false);
-    }
-
     return (
         <header className={sticky ? "First_header__mobil fixed" : "First_header__mobil"} id='first_header_mobil'>
             <div className='container'>

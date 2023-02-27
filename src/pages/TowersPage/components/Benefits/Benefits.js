@@ -25,7 +25,7 @@ export function Benefits() {
     return (
         <div className={"Benefits"}>
             <h2  id={'manual'}>Наши преимущества:</h2>
-            <div className={"cards"}>
+            <div className={"cards container"}>
                 {cardsInfo.map(el => {
                     return(
                         <div className={"card"}>

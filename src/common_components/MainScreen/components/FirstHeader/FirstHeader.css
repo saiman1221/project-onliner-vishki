@@ -1,20 +1,19 @@
 .First_header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
     width: 100%;
     height: 90px;
-    z-index: 100;
-    transition: 0.4s;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
     background: rgba(0, 0, 0, 0.5);
+    transition: background 0.4s;
 }
 
 .First_header .display{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .First_header a{
@@ -32,22 +31,43 @@
     color: #E39C13;
 }
 
-.First_header.fixed{
-    position: fixed;
-    top: 0;
-    animation-name: fix-animation;
-    animation-duration: 0.4s;
-    background: rgba(0, 0, 0, 0.7);
-}
-@keyframes fix-animation {
-    from{
-        transform: translateY(-110%);
-    }
-    to{
-        transform: translateY(0);
-    }
+.First_header .logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    cursor: pointer;
 }
 
-.First_header.fixed a:hover{
-    color: #E39C13;
+.First_header .logo img{
+    transform: translateY(-12px) scale(1);
+    transition: 0.2s;
 }
+
+.First_header .logo p{
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 19px);
+    left: 0;
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D6D6D6;
+    opacity: 1;
+    transform: translateY(12px);
+    transition: 0.2s;
+}
+
+/*-------- Styles for fixed header --------*/
+
+.First_header.fixed .logo img{
+    transform: translateY(0) scale(0.8);
+}
+
+.First_header.fixed .logo p{
+    opacity: 0;
+    transform: translateY(0);
+}
+

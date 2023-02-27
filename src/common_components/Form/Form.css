@@ -1,6 +1,19 @@
 .Form{
-    background: #EBF1FA;
     margin-bottom: 200px;
+}
+
+.Form h2{
+    margin-bottom: 66px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.Form .wrapper{
+    background: #EBF1FA;
 }
 
 .Form .content{

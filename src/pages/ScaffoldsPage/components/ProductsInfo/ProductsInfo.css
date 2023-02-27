@@ -1,0 +1,63 @@
+.ProductsInfo{
+    margin-bottom: 90px;
+}
+
+.ProductsInfo .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.ProductsInfo .title h4{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    min-width: 670px;
+    text-align: center;
+}
+
+.ProductsInfo .title div{
+    width: 100%;
+    height: 1px;
+    background-color: #A5A5A5;
+}
+
+.ProductsInfo .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ProductsInfo .part img{
+    height: 333px;
+}
+
+.ProductsInfo table thead td{
+    padding: 20px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+}
+
+.ProductsInfo table tbody td{
+    padding: 11px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.ProductsInfo table tbody td:last-child {
+    padding-right: 80px;
+    text-align: right;
+}

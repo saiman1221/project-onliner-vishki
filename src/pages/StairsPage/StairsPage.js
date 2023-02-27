@@ -19,12 +19,12 @@ export function StairsPage(props) {
 
     return (
         <div className="StairsPage">
-            <FirstScreen modal={setModalActive} content={props.pageContent.first_screen}/>
+            <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <Products/>
             {props.pageContent.stairs_data.map((el, index) => <Parameters content={el} photo={images[index]}/>)}
             <Form/>
-            <Footer/>
-            <YandexMaps/>
+            <Footer address={'д. Лесковка, Центральная ул., 2Б'}/>
+            <YandexMaps address={props.pageContent.mapData}/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     );
