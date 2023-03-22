@@ -16,14 +16,22 @@ import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
 export function StairsPage(props) {
     const [modalActive, setModalActive] = useState(false);
     const images = [img1, img2, img3]
+    const anchor = {
+        paddingTop: '100px',
+        marginTop: '-100px'
+    }
 
     return (
         <div className="StairsPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
-            <Products/>
-            {props.pageContent.stairs_data.map((el, index) => <Parameters content={el} photo={images[index]}/>)}
+            <div className={'Products container'}>
+                {props.pageContent.products.map(el => <Products content={el}/>)}
+            </div>
+            {props.pageContent.stairs_data.map((el, index) => <><div id={'stairs_product_' + (index + 1)} style={anchor}/><Parameters content={el} photo={images[index]}/></>)}
             <Form/>
-            <Footer address={'д. Лесковка, Центральная ул., 2Б'}/>
+            {/*Якорь*/}
+            <div id={'stairs_contacts'} style={anchor}/>
+            <Footer address={'д. Лесковка, Центральная ул., 2Б'} modal={setModalActive} content={props.pageContent.footer}/>
             <YandexMaps address={props.pageContent.mapData}/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>

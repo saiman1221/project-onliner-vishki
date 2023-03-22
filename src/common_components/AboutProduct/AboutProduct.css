@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.About_product .content .mobil_title{
+    display: none;
+}
+
 .About_product .content img, .About_product .content ul{
     width: 416px;
 }
@@ -23,6 +27,10 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.About_product .part img{
+    width: 100%;
 }
 
 .About_product h2{

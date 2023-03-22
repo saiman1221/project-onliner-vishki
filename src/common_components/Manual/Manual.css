@@ -52,6 +52,7 @@
     margin: 55px auto 0 auto;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .Manual .card:nth-child(2) img{

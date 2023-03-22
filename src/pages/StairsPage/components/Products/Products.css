@@ -1,87 +1,169 @@
-.Products{
-    display: flex;
-    justify-content: space-between;
-    margin: 54px auto;
-}
-
-.Products .item{
-    height: 570px;
-    width: calc((100% - 60px)/3);
-    padding: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: 0.25s;
+.Products .card {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 14px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100%/3) - 30px);
 }
 
-.Products .item:hover{
-    box-shadow: 0 0 20px rgba(113, 109, 109, 0.2);
-}
-
-.Products .item h2{
-    position: absolute;
-    top: 35px;
-    left: 0;
+.Products .card h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
     color: #000000;
-    width: 100%;
-    text-transform: initial;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.Products .item img{
-    min-height: 350px;
-    max-height: 350px;
+.Products .card img{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.Products .item .button{
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    background: none;
+.Products .card .slider_title {
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.Products .card .slider_title .slider_wrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
-.Products .item .button div{
-    height: 3px;
-    width: 18px;
-    background: #545454;
+.Products .card .slider_title h4{
+    min-width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    background: none;
     border: none;
-    border-radius: 2px;
+    padding: 10px 0;
     opacity: 0;
-    transition: 0.25s;
+    text-align: center;
 }
 
-.Products .item .button div:nth-child(1){
-    transform: rotateZ(45deg) translateX(10px) translateY(10px);
-    transform-origin: right;
-
-}
-.Products .item .button div:nth-child(2){
-    transform: rotateZ(-45deg) translateX(-10px) translateY(10px);
-    transform-origin: left;
+.Products .card .slider_title h4.not_active {
+    opacity: 0;
+    animation-name: finish-animation;
+    animation-duration: 0.5s;
+    pointer-events: none;
 }
 
-.Products .item:hover .button div:nth-child(1){
-    transform: rotateZ(45deg) translateX(1px) translateY(0);
-    transform-origin: right;
+@keyframes finish-animation {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.Products .card .slider_title h4.active {
     opacity: 1;
+    animation-name: start-animation;
+    animation-duration: 0.5s;
+    pointer-events: auto;
+}
+
+@keyframes start-animation {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Products .card .slider_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Products .card .slider_buttons button{
+    transition: 0.4s;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(0,0,0,0);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.Products .card .slider_buttons button.prev{
+    background-image: url("images/button_img_prev.svg");
+}
+.Products .card .slider_buttons button.next{
+    background-image: url("images/button_img_next.svg");
+}
+
+.Products .card .slider_info{
+    overflow: hidden;
+}
+
+.Products .card .slider_info .slider_wrapper{
+    display: flex;
+    transition: 0.4s;
+}
+
+.Products .card .slider_info .slider_wrapper .item{
+    min-width: 100%;
+}
+
+.Products .card .slider_info .slider_wrapper .item .title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Products .card .slider_info ul{
+    /*width: 100%;*/
+    background-color: #00223E;
 
 }
-.Products .item:hover .button div:nth-child(2){
-    transform: rotateZ(-45deg) translateX(-1px) translateY(0);
-    transform-origin: left;
-    opacity: 1;
+
+.Products .card .slider_info li{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #282828;
+    list-style: none;
+}
+
+.Products .card .slider_info li .price{
+    font-weight: 600;
+    font-size: 20px;
+    color: #EE9A38;
+}
+
+.Products .card .slider_info li .days{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Products .bottom_button{
+    width: 100%;
 }

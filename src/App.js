@@ -5,6 +5,7 @@ import {TowersPage} from "./pages/TowersPage/TowersPage";
 import {ScaffoldsPage} from "./pages/ScaffoldsPage/ScaffoldsPage";
 import {ScaffoldingsPage} from "./pages/ScaffoldingsPage/ScaffoldingsPage";
 import {StairsPage} from "./pages/StairsPage/StairsPage";
+import {NoMatch} from "./pages/NoMatch/NoMatch";
 
 export function App(props) {
     return (
@@ -16,6 +17,7 @@ export function App(props) {
                     <Route path={'/scaffoldings'} element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
                     <Route path={'/scaffolds'} element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
                     <Route path={'/stairs'} element={<StairsPage pageContent={props.store.pagesContent.stairs}/>}/>
+                    <Route path={'*'} element={<NoMatch pageContent={props.store.pagesContent.nomatch}/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

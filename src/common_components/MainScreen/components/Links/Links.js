@@ -9,7 +9,8 @@ export function Links(props) {
                 {props.content.links.map(el => (
                     <div className={'item'}>
                         <p>{el.linkText}</p>
-                        <div><NavLink to={el.link} className={'link'}>Подробнее</NavLink></div>
+                        <div className={'desktop_link'}><NavLink to={el.link} className={'link'}>Подробнее</NavLink></div>
+                        <div className={'mobil_link'}><NavLink to={el.link} className={'link'}>{el.linkText}</NavLink></div>
                     </div>
                 ))}
             </div>

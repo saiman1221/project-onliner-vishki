@@ -1,3 +1,9 @@
 .StairsPage .Parameters:nth-child(2n) .characteristics{
     flex-direction: row-reverse;
 }
+
+.Products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}

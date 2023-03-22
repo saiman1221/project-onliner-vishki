@@ -27,11 +27,7 @@ export const Footer = (props) => {
                     </div>
                 </div>
                 <div className={'links'}>
-                    <a href="#prices">Стоимость</a>
-                    <a href="#product_info">Комплектация</a>
-                    <a href="#manual">Инструкция по сборке</a>
-                    <a href="#questions">Вопросы</a>
-                    <a href="#footer">Контакты</a>
+                    {props.content.map(el => <a href={`#${el.linkURL}`}>{el.linkText}</a>)}
                 </div>
                 <div className={'button'}>
                     <button onClick={() => {

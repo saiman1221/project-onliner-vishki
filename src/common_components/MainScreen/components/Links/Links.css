@@ -11,6 +11,7 @@
 
 .Links .item{
     text-align: center;
+    width: calc(100% / 3);
 }
 
 .Links p{
@@ -43,8 +44,10 @@
     align-items: center;
     gap: 0;
     transition: 0.4s;
-    /*padding-right: 24px;*/
+}
 
+.Links .item .mobil_link{
+    display: none;
 }
 
 .Links .link:after, .Links_bar .content .item .link a:after{

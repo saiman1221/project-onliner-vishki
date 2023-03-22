@@ -1,0 +1,29 @@
+.nomatch .First_screen{
+    height: 100vh;
+}
+
+.nomatch .First_screen > .layout > .content > h1{
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.nomatch .First_screen > .layout > .content > p{
+    display: none;
+}
+
+.nomatch .First_screen .nomatch_button{
+    display: block;
+}
+
+.nomatch .First_screen .modal_button{
+    display: none;
+}
+
+.nomatch .First_screen .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}

@@ -4,6 +4,28 @@ export const store = {
     'pagesContent': {
         'towers': {
             'first_screen': {
+                'header' : [
+                    {
+                        'linkText' : 'Стоимость',
+                        'linkURL' : 'towers_price'
+                    },
+                    {
+                        'linkText' : 'Характеристики',
+                        'linkURL' : 'towers_params'
+                    },
+                    {
+                        'linkText' : 'Инструкция по сборке',
+                        'linkURL' : 'towers_manual'
+                    },
+                    {
+                        'linkText' : 'Вопросы',
+                        'linkURL' : 'towers_questions'
+                    },
+                    {
+                        'linkText' : 'Контакты',
+                        'linkURL' : 'towers_contacts'
+                    }
+                ],
                 'title': 'Аренда строительных вышек тур в Минске',
                 'links': [
                     {
@@ -119,10 +141,54 @@ export const store = {
             'mapData' : {
                 point: [54.00396657058067,27.70507649999999],
                 zoom: 17
-            }
+            },
+            'footer' : [
+                {
+                    'linkText' : 'Стоимость',
+                    'linkURL' : 'towers_price'
+                },
+                {
+                    'linkText' : 'Характеристики',
+                    'linkURL' : 'towers_params'
+                },
+                {
+                    'linkText' : 'Инструкция по сборке',
+                    'linkURL' : 'towers_manual'
+                },
+                {
+                    'linkText' : 'Вопросы',
+                    'linkURL' : 'towers_questions'
+                },
+                {
+                    'linkText' : 'Контакты',
+                    'linkURL' : 'towers_contacts'
+                }
+            ],
         },
         'scaffoldings': {
             'first_screen': {
+                'header' : [
+                    {
+                        'linkText' : 'Документация',
+                        'linkURL' : 'scaffoldings_docs'
+                    },
+                    {
+                        'linkText' : 'Характеристики',
+                        'linkURL' : 'scaffoldings_params'
+                    },
+                    {
+                        'linkText' : 'Стоимость',
+                        'linkURL' : 'scaffoldings_price'
+                    },
+                    {
+                        'linkText' : 'Инструкция по сборке',
+                        'linkURL' : 'scaffoldings_manual'
+                    },
+                    {
+                        'linkText' : 'Контакты',
+                        'linkURL' : 'scaffoldings_contacts'
+                    }
+                ],
                 'title': 'Аренда строительных лесов в Минске',
                 'links': [
                     {
@@ -233,10 +299,50 @@ export const store = {
             'mapData' : {
                 point: [54.000928, 27.701339],
                 zoom: 17
-            }
+            },
+            'footer' : [
+                {
+                    'linkText' : 'Документация',
+                    'linkURL' : 'scaffoldings_docs'
+                },
+                {
+                    'linkText' : 'Характеристики',
+                    'linkURL' : 'scaffoldings_params'
+                },
+                {
+                    'linkText' : 'Стоимость',
+                    'linkURL' : 'scaffoldings_price'
+                },
+                {
+                    'linkText' : 'Инструкция по сборке',
+                    'linkURL' : 'scaffoldings_manual'
+                },
+                {
+                    'linkText' : 'Контакты',
+                    'linkURL' : 'scaffoldings_contacts'
+                }
+            ],
         },
         'scaffolds': {
             'first_screen': {
+                'header' : [
+                    {
+                        'linkText' : 'Характеристики',
+                        'linkURL' : 'scaffolds_params'
+                    },
+                    {
+                        'linkText' : 'Стоимость',
+                        'linkURL' : 'scaffolds_price'
+                    },
+                    {
+                        'linkText' : 'Инструкция по сборке',
+                        'linkURL' : 'scaffolds_manual'
+                    },
+                    {
+                        'linkText' : 'Контакты',
+                        'linkURL' : 'scaffolds_contacts'
+                    }
+                ],
                 'title': 'Аренда строительных помостов в Минске',
                 'links': [
                     {
@@ -288,10 +394,46 @@ export const store = {
             'mapData' : {
                 point: [54.000928, 27.701339],
                 zoom: 17
-            }
+            },
+            'footer' : [
+                {
+                    'linkText' : 'Характеристики',
+                    'linkURL' : 'scaffolds_params'
+                },
+                {
+                    'linkText' : 'Стоимость',
+                    'linkURL' : 'scaffolds_price'
+                },
+                {
+                    'linkText' : 'Инструкция по сборке',
+                    'linkURL' : 'scaffolds_manual'
+                },
+                {
+                    'linkText' : 'Контакты',
+                    'linkURL' : 'scaffolds_contacts'
+                }
+            ],
         },
         'stairs': {
             'first_screen': {
+                'header' : [
+                    {
+                        'linkText' : 'Стремянка',
+                        'linkURL' : 'stairs_product_1'
+                    },
+                    {
+                        'linkText' : 'Лестница (3 секции)',
+                        'linkURL' : 'stairs_product_2'
+                    },
+                    {
+                        'linkText' : 'Лестница (4 секции)',
+                        'linkURL' : 'stairs_product_3'
+                    },
+                    {
+                        'linkText' : 'Контакты',
+                        'linkURL' : 'stairs_contacts'
+                    },
+                ],
                 'title': 'Аренда строительных лестниц в Минске',
                 'links': [
                     {
@@ -311,7 +453,8 @@ export const store = {
                     }
                 ],
                 'bcPhoto': '',
-                'className': 'stairs'
+                'className': 'stairs',
+
             },
             'stairs_data': [
                 {
@@ -384,8 +527,252 @@ export const store = {
             'mapData' : {
                 point: [54.000928, 27.701339],
                 zoom: 17
-            }
+            },
+            'products' : [
+                {
+                    'title' : 'Стремянка алюминиевая',
+                    'slider' : [
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                    ],
+                    'img' : 0
+                },
+                {
+                    'title' : 'Стремянка алюминиевая',
+                    'slider' : [
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                    ],
+                    'img' : 0
+                },
+                {
+                    'title' : 'Стремянка алюминиевая',
+                    'slider' : [
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '5 ступенек',
+                            'name' : 'Ам705',
+                            'price' : [
+                                {
+                                    'value' : '8',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                    ],
+                    'img' : 0
+                },
+            ],
+            'footer' : [
+                {
+                    'linkText' : 'Стремянка',
+                    'linkURL' : 'stairs_product_1'
+                },
+                {
+                    'linkText' : 'Лестница (3 секции)',
+                    'linkURL' : 'stairs_product_2'
+                },
+                {
+                    'linkText' : 'Лестница (4 секции)',
+                    'linkURL' : 'stairs_product_3'
+                },
+                {
+                    'linkText' : 'Контакты',
+                    'linkURL' : 'stairs_contacts'
+                },
+            ],
         },
+        'nomatch' : {
+            'header' : [
+                {
+                    'linkText' : 'Стоимость',
+                    'linkURL' : 'towers_price'
+                },
+                {
+                    'linkText' : 'Характеристики',
+                    'linkURL' : 'towers_params'
+                },
+                {
+                    'linkText' : 'Инструкция по сборке',
+                    'linkURL' : 'towers_manual'
+                },
+                {
+                    'linkText' : 'Вопросы',
+                    'linkURL' : 'towers_questions'
+                },
+                {
+                    'linkText' : 'Контакты',
+                    'linkURL' : 'towers_contacts'
+                }
+            ],
+            'title': '404 Not Found Page',
+            'links': [
+                {
+                    'linkText': 'Аренда вышек',
+                    'link': '/towers'
+                },
+                {
+                    'linkText': 'Аренда лесов',
+                    'link': '/scaffoldings'
+                },
+                {
+                    'linkText': 'Аренда лестниц',
+                    'link': '/stairs'
+                },
+                {
+                    'linkText': 'Аренда помостов',
+                    'link': '/scaffolds'
+                }
+            ],
+            'className': 'towers'
+        }
     }
 }
 

@@ -93,7 +93,7 @@
 }
 
 .First_screen.towers > .layout > .header .First_header{
-    background: rgba(40, 63, 81, 0.78);
+    background: rgba(41, 66, 87, 0.78);
 }
 .First_screen.scaffoldings > .layout > .header .First_header{
     background: rgba(15, 25, 38, 0.5);
@@ -105,15 +105,24 @@
     background: rgba(15, 25, 38, 0.7);
 }
 
-.First_screen.towers > .layout > .header .First_header.fixed{
-    background: rgba(40, 63, 81, 1);
+.First_screen.towers > .layout > .header .First_header__mobil, .First_screen.scaffoldings > .layout > .header .First_header__mobil, .First_screen.stairs > .layout > .header .First_header__mobil, .First_screen.scaffolds > .layout > .header .First_header__mobil{
+    background: rgba(0,0,0,0);
 }
-.First_screen.scaffoldings > .layout > .header .First_header.fixed{
+
+.First_screen.towers > .layout > .header .First_header.fixed, .First_screen.towers > .layout > .header .First_header__mobil.fixed{
+    background:  rgba(41, 66, 87, 1);
+}
+.First_screen.scaffoldings > .layout > .header .First_header.fixed, .First_screen.scaffoldings > .layout > .header .First_header__mobil.fixed{
     background: rgba(15, 25, 38, 1);
 }
-.First_screen.stairs > .layout > .header .First_header.fixed{
+.First_screen.stairs > .layout > .header .First_header.fixed, .First_screen.stairs > .layout > .header .First_header__mobil.fixed{
     background: rgba(15, 25, 38, 1);
 }
-.First_screen.scaffolds > .layout > .header .First_header.fixed{
+.First_screen.scaffolds > .layout > .header .First_header.fixed, .First_screen.scaffolds > .layout > .header .First_header__mobil.fixed{
     background: rgba(15, 25, 38, 1);
+}
+
+.nomatch_button{
+    display: none;
+    text-decoration: none;
 }

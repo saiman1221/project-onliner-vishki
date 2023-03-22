@@ -10,7 +10,7 @@
     padding: 150px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
 }
 
 .Mobil_menu.close{

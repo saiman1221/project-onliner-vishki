@@ -17,11 +17,19 @@ import {Form} from "../../common_components/Form/Form";
 
 export function TowersPage(props){
     const [modalActive, setModalActive] = useState(false);
+    const anchor = {
+        paddingTop: '100px',
+        marginTop: '-100px'
+    }
 
     return (
         <div className="TowersPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
+            {/*Якорь*/}
+            <div id={'towers_price'} style={anchor}/>
             <Cards modal={setModalActive}/>
+            {/*Якорь*/}
+            <div id={'towers_params'} style={anchor}/>
             <div className={'product_info_table container'}>
                 <Table content={props.pageContent.product_info_table}/>
             </div>
@@ -31,11 +39,17 @@ export function TowersPage(props){
             </div>
             <Form/>
             <LinksBar content={props.pageContent.first_screen}/>
+            {/*Якорь*/}
+            <div id={'towers_manual'} style={anchor}/>
             <Manual content={props.pageContent.manual}/>
             <VideoManual/>
             <Feedback/>
+            {/*Якорь*/}
+            <div id={'towers_questions'} style={anchor}/>
             <Questions/>
-            <Footer modal={setModalActive}/>
+            {/*Якорь*/}
+            <div id={'towers_contacts'} style={anchor}/>
+            <Footer modal={setModalActive} content={props.pageContent.footer}/>
             <YandexMaps address={props.pageContent.mapData}/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>

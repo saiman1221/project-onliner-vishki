@@ -16,21 +16,6 @@
     align-items: center;
 }
 
-.First_header a{
-    font-family: 'Jura', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.First_header a:hover{
-    color: #E39C13;
-}
-
 .First_header .logo{
     display: flex;
     justify-content: center;
@@ -60,6 +45,26 @@
     transition: 0.2s;
 }
 
+.First_header .links{
+    display: flex;
+    gap: 50px;
+}
+
+.First_header .links a{
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.First_header .links a:hover{
+    color: #E39C13;
+}
+
 /*-------- Styles for fixed header --------*/
 
 .First_header.fixed .logo img{
@@ -70,4 +75,6 @@
     opacity: 0;
     transform: translateY(0);
 }
+
+
 

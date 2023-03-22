@@ -1,9 +1,14 @@
 .First_header__mobil{
     width: 100%;
+    height: 90px;
     z-index: 100;
-    transition: 0.4s;
-    padding: 20px 0 15px 0;
+    transition: background 0.3s;
     display: none;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
 }
 
 .First_header__mobil > .container{
@@ -34,8 +39,8 @@
 }
 
 .First_header__mobil > .container .burger_button{
-    width: 30px;
-    height: 27px;
+    width: 40px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,29 +48,8 @@
 
 .First_header__mobil > .container .burger_button div{
     width: 100%;
-    height: 4px;
+    height: 3px;
     border-radius: 2px;
     border: none;
     background-color: #fff;
-}
-
-.First_header__mobil.fixed{
-    position: fixed;
-    top: -5px;
-    animation-name: fix-animation;
-    animation-duration: 0.4s;
-    background-color: rgba(3, 50, 90, 0.95);
-}
-
-@keyframes fix-animation {
-    from{
-        transform: translateY(-110%);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
-
-.First_header__mobil.fixed > .container a:hover{
-    color: #E39C13;
 }

@@ -16,21 +16,35 @@ import {Form} from "../../common_components/Form/Form";
 
 export function ScaffoldingsPage(props){
     const [modalActive, setModalActive] = useState(false);
+    const anchor = {
+        paddingTop: '100px',
+        marginTop: '-100px'
+    }
 
     return (
         <div className="ScaffoldingsPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <AboutProduct content={props.pageContent.about_product}/>
+            {/*Якорь*/}
+            <div id={'scaffoldings_docs'} style={anchor}/>
             <Docs/>
+            {/*Якорь*/}
+            <div id={'scaffoldings_params'} style={anchor}/>
             <div className={'container ScaffoldingsPage_table'}>
                 <Table content={props.pageContent.spec_table} className={'product_spec'}/>
             </div>
+            {/*Якорь*/}
+            <div id={'scaffoldings_price'} style={anchor}/>
             <Prices content={props.pageContent.prices}/>
             <Form/>
             <LinksBar content={props.pageContent.first_screen}/>
+            {/*Якорь*/}
+            <div id={'scaffoldings_manual'} style={anchor}/>
             <Manual content={props.pageContent.manual}/>
             <Feedback/>
-            <Footer address={'д. Лесковка, Центральная ул., 2Б'}/>
+            {/*Якорь*/}
+            <div id={'scaffoldings_contacts'} style={anchor}/>
+            <Footer address={'д. Лесковка, Центральная ул., 2Б'} modal={setModalActive} content={props.pageContent.footer}/>
             <YandexMaps address={props.pageContent.mapData}/>
             <Modal active={modalActive} setActive={setModalActive}/>
         </div>

@@ -29,36 +29,47 @@
 }
 
 .Card .size_buttons{
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
+    border: 3px solid #F2F4FB;
+    border-radius: 50px;
+    background: #F2F4FB;
+
 }
 
-.Card .size_button{
-    background: #DCDCDC;
-    border-radius: 50px;
+.Card .size_buttons .size_button{
+    background: none;
     padding: 7px 0;
-    width: 90px;
+    width: calc(100%/3);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #000;
+    color: #00345F;
     transition: 0.4s;
     border: none;
     cursor: pointer;
+    z-index: 2;
 }
 
-.Card .size_button:hover{
-    background-color: rgba(220,220,220,0.3);
+.Card .size_buttons .size_button.active{
+    color: #000;
 }
 
-.Card .size_button.active{
-    background: #397AB2;
-    color: #fff;
+.Card .size_buttons .tracker{
+    width: calc(100%/3);
+    height: 100%;
+    background: linear-gradient(164.58deg, #F6D365 14.25%, #EE9A38 89.19%), linear-gradient(0deg, #F3A242, #F3A242), #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+    border-radius: 50px;
 }
 
 .Card .info h3{
@@ -81,16 +92,26 @@
     margin-bottom: 15px;
 }
 
-.Card ul{
+.Card .prices{
+    overflow: hidden;
     margin-bottom: 15px;
+}
+
+.Card .prices_wrapper{
+    display: flex;
+    transition: 1s;
+}
+
+.Card ul{
+    min-width: 100%;
 }
 
 .Card li{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 18px;
     color: #00345F;
     list-style: none;
 }
