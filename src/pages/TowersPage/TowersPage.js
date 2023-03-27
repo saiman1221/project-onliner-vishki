@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './TowersPage.css'
 
-import {VideoManual} from "./components/VideoManual/VideoManual";
+import {VideoManual} from "../../common_components/VideoManual/VideoManual";
 import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
 import {Modal} from "../../common_components/Modal/Modal";
 import {Feedback} from "../../common_components/Feedback/Feedback";
@@ -21,6 +21,10 @@ export function TowersPage(props){
         paddingTop: '100px',
         marginTop: '-100px'
     }
+
+    useEffect(() => {
+        document.getElementById('title').innerText = 'Аренда вышек тур в Минске с доставкой. Вышка тура высотой до 21 метра. Тура на прокат.'
+    })
 
     return (
         <div className="TowersPage">
@@ -42,11 +46,11 @@ export function TowersPage(props){
             {/*Якорь*/}
             <div id={'towers_manual'} style={anchor}/>
             <Manual content={props.pageContent.manual}/>
-            <VideoManual/>
+            <VideoManual content={props.pageContent.video}/>
             <Feedback/>
             {/*Якорь*/}
             <div id={'towers_questions'} style={anchor}/>
-            <Questions/>
+            <Questions content={props.pageContent.questions}/>
             {/*Якорь*/}
             <div id={'towers_contacts'} style={anchor}/>
             <Footer modal={setModalActive} content={props.pageContent.footer}/>

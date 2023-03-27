@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './ScaffoldingsPage.css';
 
 import {Prices} from "./components/Prices/Prices";
@@ -13,6 +13,9 @@ import {Docs} from "./components/Docs/Docs";
 import {AboutProduct} from "../../common_components/AboutProduct/AboutProduct";
 import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
 import {Form} from "../../common_components/Form/Form";
+import {VideoManual} from "../../common_components/VideoManual/VideoManual";
+import {Questions} from "../TowersPage/components/Questions/Questions";
+import {Benefits} from "../TowersPage/components/Benefits/Benefits";
 
 export function ScaffoldingsPage(props){
     const [modalActive, setModalActive] = useState(false);
@@ -20,6 +23,10 @@ export function ScaffoldingsPage(props){
         paddingTop: '100px',
         marginTop: '-100px'
     }
+
+    useEffect(() => {
+        document.getElementById('title').innerText = 'Аренда строительных лесов в Минске от 6 коп. за кв.м. с доставкой';
+    })
 
     return (
         <div className="ScaffoldingsPage">
@@ -36,11 +43,15 @@ export function ScaffoldingsPage(props){
             {/*Якорь*/}
             <div id={'scaffoldings_price'} style={anchor}/>
             <Prices content={props.pageContent.prices}/>
+            {/*--------------------- Карусель ---------------------------------*/}
+            <Benefits/>
             <Form/>
             <LinksBar content={props.pageContent.first_screen}/>
             {/*Якорь*/}
             <div id={'scaffoldings_manual'} style={anchor}/>
+            <Questions content={props.pageContent.questions}/>
             <Manual content={props.pageContent.manual}/>
+            <VideoManual content={props.pageContent.video}/>
             <Feedback/>
             {/*Якорь*/}
             <div id={'scaffoldings_contacts'} style={anchor}/>

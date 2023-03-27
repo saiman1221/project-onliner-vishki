@@ -16,7 +16,7 @@ export const Footer = (props) => {
                             <h4>E-mail:</h4><a href='mailto:gradovichnicolay@gmail.com'>gradovichnicolay@gmail.com</a>
                         </div>
                         <div className={'item'}>
-                            <h4>Адрес:</h4><p>{props.address || 'д.Лесковка, улица Центральная, 6а (только яндекс навигатор, другие навигаторы не показывают этот адрес)'}</p>
+                            <h4>Адрес:</h4><p>д.Лесковка</p>
                         </div>
                     </div>
                     <div className={'button mobil'}>

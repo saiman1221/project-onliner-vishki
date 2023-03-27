@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './Card.css';
 
-export function Card(props) {
+export const Card = (props) => {
     const [infoToShow, setInfoToShow] = useState(0);
     const [trackerPosition, setTrackerPosition] = useState(0);
 

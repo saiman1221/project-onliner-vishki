@@ -1,0 +1,15 @@
+.Video_manual h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.Video_manual .video{
+    width: 769px;
+    height: 432px;
+    margin: 0 auto 105px auto;
+}

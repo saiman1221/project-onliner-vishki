@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import './FirstHeader.css';
 import logo from './images/logoMin.svg';
+import {NavLink} from "react-router-dom";
 
 export const FirstHeader = (props) => {
     let header = React.createRef();
@@ -25,10 +26,10 @@ export const FirstHeader = (props) => {
     return (
         <header className="First_header" ref={header}>
             <div className='display container'>
-                <div className={'logo'} onClick={()=>{window.scrollTo(0,0)}}>
+                <NavLink to={'/'} className={'logo'} onClick={()=>{window.scrollTo(0,0)}}>
                     <img src={logo} alt="Логотип"/>
                     <p>ArendaTur</p>
-                </div>
+                </NavLink>
                 <div className={'links'}>
                     {props.content.map(el => <a href={`#${el.linkURL}`}>{el.linkText}</a>)}
                 </div>
