@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     width: calc((100%/3) - 30px);
+    margin-bottom: 100px;
 }
 
 .Products .card h2{
@@ -116,10 +117,12 @@
 
 .Products .card .slider_info{
     overflow: hidden;
+    width: 100%;
 }
 
 .Products .card .slider_info .slider_wrapper{
     display: flex;
+    min-width: 100%;
     transition: 0.4s;
 }
 
@@ -138,9 +141,9 @@
 }
 
 .Products .card .slider_info ul{
-    /*width: 100%;*/
-    background-color: #00223E;
-
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 10px;
 }
 
 .Products .card .slider_info li{
@@ -166,4 +169,15 @@
 
 .Products .bottom_button{
     width: 100%;
+    border: 1px solid #F3A242;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 10px 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
 }

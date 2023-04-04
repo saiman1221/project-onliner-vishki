@@ -613,11 +613,29 @@ export const store = {
                     'title' : 'Стремянка алюминиевая',
                     'slider' : [
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '3 ступеньки',
+                            'name' : 'Ам703',
                             'price' : [
                                 {
-                                    'value' : '8',
+                                    'value' : '3',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '25',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '4 ступеньки',
+                            'name' : 'Ам704',
+                            'price' : [
+                                {
+                                    'value' : '4',
                                     'days' : '1'
                                 },
                                 {
@@ -635,7 +653,7 @@ export const store = {
                             'name' : 'Ам705',
                             'price' : [
                                 {
-                                    'value' : '8',
+                                    'value' : '5',
                                     'days' : '1'
                                 },
                                 {
@@ -649,8 +667,8 @@ export const store = {
                             ]
                         },
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '8 ступенек',
+                            'name' : 'Ам708',
                             'price' : [
                                 {
                                     'value' : '8',
@@ -665,16 +683,16 @@ export const store = {
                                     'days' : '30'
                                 },
                             ]
-                        },
+                        }
                     ],
                     'img' : 0
                 },
                 {
-                    'title' : 'Стремянка алюминиевая',
+                    'title' : 'Лестница 3 секции',
                     'slider' : [
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '3*6 ступ.',
+                            'name' : 'арт. 5306',
                             'price' : [
                                 {
                                     'value' : '8',
@@ -691,8 +709,8 @@ export const store = {
                             ]
                         },
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '3*8 ступ.',
+                            'name' : 'арт. 5308',
                             'price' : [
                                 {
                                     'value' : '8',
@@ -709,85 +727,103 @@ export const store = {
                             ]
                         },
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '3*10 ступ.',
+                            'name' : 'арт. 5310',
                             'price' : [
                                 {
-                                    'value' : '8',
+                                    'value' : '10',
                                     'days' : '1'
                                 },
                                 {
-                                    'value' : '25',
+                                    'value' : '50',
                                     'days' : '7'
                                 },
                                 {
-                                    'value' : '50',
+                                    'value' : '100',
                                     'days' : '30'
                                 },
                             ]
                         },
+                        {
+                            'title' : '3*12 ступ.',
+                            'name' : 'арт. 5312',
+                            'price' : [
+                                {
+                                    'value' : '10',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '100',
+                                    'days' : '30'
+                                },
+                            ]
+                        },
+                        {
+                            'title' : '3*14 ступ.',
+                            'name' : 'арт. 5314',
+                            'price' : [
+                                {
+                                    'value' : '10',
+                                    'days' : '1'
+                                },
+                                {
+                                    'value' : '50',
+                                    'days' : '7'
+                                },
+                                {
+                                    'value' : '100',
+                                    'days' : '30'
+                                },
+                            ]
+                        }
                     ],
-                    'img' : 0
+                    'img' : 1
                 },
                 {
-                    'title' : 'Стремянка алюминиевая',
+                    'title' : 'Лестница 4 секции',
                     'slider' : [
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '4*3 ступ.',
+                            'name' : 'Т433',
                             'price' : [
                                 {
-                                    'value' : '8',
+                                    'value' : '10',
                                     'days' : '1'
                                 },
                                 {
-                                    'value' : '25',
+                                    'value' : '50',
                                     'days' : '7'
                                 },
                                 {
-                                    'value' : '50',
+                                    'value' : '100',
                                     'days' : '30'
                                 },
                             ]
                         },
                         {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
+                            'title' : '4*5 ступ.',
+                            'name' : 'Т435',
                             'price' : [
                                 {
-                                    'value' : '8',
+                                    'value' : '10',
                                     'days' : '1'
                                 },
                                 {
-                                    'value' : '25',
+                                    'value' : '50',
                                     'days' : '7'
                                 },
                                 {
-                                    'value' : '50',
+                                    'value' : '100',
                                     'days' : '30'
                                 },
                             ]
-                        },
-                        {
-                            'title' : '5 ступенек',
-                            'name' : 'Ам705',
-                            'price' : [
-                                {
-                                    'value' : '8',
-                                    'days' : '1'
-                                },
-                                {
-                                    'value' : '25',
-                                    'days' : '7'
-                                },
-                                {
-                                    'value' : '50',
-                                    'days' : '30'
-                                },
-                            ]
-                        },
+                        }
                     ],
-                    'img' : 0
+                    'img' : 2
                 },
             ],
             'footer' : [

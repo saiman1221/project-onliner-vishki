@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import './Products.css';
 
@@ -15,35 +15,37 @@ export const Products = (props) => {
     const changeSliderPosition = (position) => {
         if (position >= 0 && position < props.content.slider.length) {
             setSliderPosition(position);
-            if(position === 0){
+            if (position === 0) {
                 prevButton.current.style.opacity = '0';
+                nextButton.current.style.opacity = '1';
                 prevButton.current.style.pointerEvents = 'none';
                 nextButton.current.style.pointerEvents = 'auto';
-            }
-            else if(position === (props.content.slider.length - 1)) {
+            } else if (position === (props.content.slider.length - 1)) {
+                prevButton.current.style.opacity = '1';
                 nextButton.current.style.opacity = '0';
                 nextButton.current.style.pointerEvents = 'none';
                 prevButton.current.style.pointerEvents = 'auto';
-            }
-            else{
+            } else {
                 prevButton.current.style.opacity = '1';
                 nextButton.current.style.opacity = '1';
                 prevButton.current.style.pointerEvents = 'auto';
                 nextButton.current.style.pointerEvents = 'auto';
             }
-        }
-
-        else {
+        } else {
             console.log('false value of slider position');
         }
     }
+
+    useEffect(() => {
+        changeSliderPosition(sliderPosition)
+    })
 
     return (
         <div className={'card'}>
             <h2>{props.content.title}</h2>
             <img src={images[props.content.img]} alt="Фото лестницы"/>
             <div className={'slider_title'}>
-                <div className="slider_wrapper" style={{transform: `translateX(${-(sliderPosition * 50) + 25 }%)`}}>
+                <div className="slider_wrapper" style={{transform: `translateX(${-(sliderPosition * 50) + 25}%)`}}>
                     {props.content.slider.map((item, id) => <h4 onClick={() => {
                         changeSliderPosition(id)
                     }} className={sliderPosition === id ? 'active' : 'not_active'}>{item.title}</h4>)}
@@ -63,7 +65,8 @@ export const Products = (props) => {
                         <div className={'item'}>
                             <h3 className={'title'}>{item.name}</h3>
                             <ul>
-                                {item.price.map(li => <li><span className={'price'}>{li.value}</span>{' рублей / '}<span className={'days'}>{li.days}</span>{' ' + (li.days > 1 ? 'дней' : 'сутки')}</li>)}
+                                {item.price.map(li => <li><span className={'price'}>{li.value}</span>{' рублей / '}<span
+                                    className={'days'}>{li.days}</span>{' ' + (li.days > 1 ? 'дней' : 'сутки')}</li>)}
                             </ul>
                         </div>)}
                 </div>
