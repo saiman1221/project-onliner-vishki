@@ -71,7 +71,7 @@ export const Products = (props) => {
                         </div>)}
                 </div>
             </div>
-            <button className={'bottom_button'}>Заказать аренду</button>
+            <button className={'bottom_button'} onClick={()=>{props.setModalActive(true)}}>Заказать аренду</button>
         </div>
     )
 }

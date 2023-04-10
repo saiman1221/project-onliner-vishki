@@ -20,6 +20,7 @@ export function Manual(props) {
                         <div className={'text'}>
                             {el.text}
                             {tryRequire(`./images/${props.content.page_name}/img${id+1}.png`) ? <img src={tryRequire(`./images/${props.content.page_name}/img${id+1}.png`)} alt="Фото"/> : ''}
+                            {tryRequire(`./images/${props.content.page_name}/img${id+1}.jpg`) ? <img style={{width: '100%'}} src={tryRequire(`./images/${props.content.page_name}/img${id+1}.jpg`)} alt="Фото"/> : ''}
                         </div>
                     </div>
                 ))}

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './ScaffoldsPage.css';
 
 import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
@@ -11,6 +11,7 @@ import {AboutProduct} from "../../common_components/AboutProduct/AboutProduct";
 import {ProductsInfo} from "./components/ProductsInfo/ProductsInfo";
 import {Feedback} from "../../common_components/Feedback/Feedback";
 import {Table} from "../../common_components/Table/Table";
+import {Questions} from "../TowersPage/components/Questions/Questions";
 
 export function ScaffoldsPage(props){
     const [modalActive, setModalActive] = useState(false);
@@ -18,6 +19,9 @@ export function ScaffoldsPage(props){
         paddingTop: '100px',
         marginTop: '-100px'
     }
+    useEffect(() => {
+        document.getElementById('title').innerText = 'Аренда малярного помоста ПМ 200 от 1,67 руб/сутки.';
+    })
 
     return (
         <div className="ScaffoldsPage">
@@ -36,6 +40,7 @@ export function ScaffoldsPage(props){
             <div id={'scaffolds_manual'} style={anchor}/>
             <Manual content={props.pageContent.manual}/>
             <Feedback/>
+            <Questions content={props.pageContent.questions}/>
             {/*Якорь*/}
             <div id={'scaffolds_contacts'} style={anchor}/>
             <Footer address={'д.Лесковка, Центральная ул., 2Б'} modal={setModalActive} content={props.pageContent.footer}/>

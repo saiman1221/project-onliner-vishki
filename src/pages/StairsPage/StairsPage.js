@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './StairsPage.css'
 
 import {FirstScreen} from "../../common_components/MainScreen/FirstScreen";
@@ -12,6 +12,7 @@ import img3 from'./images/img3.png';
 import {Form} from "../../common_components/Form/Form";
 import {Footer} from "../../common_components/Footer/Footer";
 import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
+import {Questions} from "../TowersPage/components/Questions/Questions";
 
 export function StairsPage(props) {
     const [modalActive, setModalActive] = useState(false);
@@ -21,14 +22,19 @@ export function StairsPage(props) {
         marginTop: '-100px'
     }
 
+    useEffect(() => {
+        document.getElementById('title').innerText = 'Аренда лестниц и стремянок в Минске от 3 руб/сутки.';
+    })
+
     return (
         <div className="StairsPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
             <div className={'Products container'}>
-                {props.pageContent.products.map(el => <Products content={el}/>)}
+                {props.pageContent.products.map(el => <Products content={el} setModalActive={setModalActive}/>)}
             </div>
             {props.pageContent.stairs_data.map((el, index) => <><div id={'stairs_product_' + (index + 1)} style={anchor}/><Parameters content={el} photo={images[index]}/></>)}
             <Form/>
+            <Questions content={props.pageContent.questions}/>
             {/*Якорь*/}
             <div id={'stairs_contacts'} style={anchor}/>
             <Footer address={'д. Лесковка, Центральная ул., 2Б'} modal={setModalActive} content={props.pageContent.footer}/>

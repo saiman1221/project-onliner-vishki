@@ -17,7 +17,7 @@ export function App(props) {
                     <Route path={'/scaffoldings'} element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
                     <Route path={'/scaffolds'} element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
                     <Route path={'/stairs'} element={<StairsPage pageContent={props.store.pagesContent.stairs}/>}/>
-                    <Route path={'*'} element={<NoMatch pageContent={props.store.pagesContent.nomatch}/>}/>
+                    {/*<Route path={'*'} element={<NoMatch pageContent={props.store.pagesContent.nomatch}/>}/>*/}
                 </Routes>
             </BrowserRouter>
         </div>
