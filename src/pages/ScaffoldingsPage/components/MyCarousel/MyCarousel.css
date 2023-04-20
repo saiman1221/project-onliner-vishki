@@ -1,0 +1,28 @@
+.MyCarousel {
+    margin-bottom: 100px;
+}
+
+.MyCarousel__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.MyCarousel .carousel__dots__group{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.MyCarousel .carousel__dots__group .carousel__dot{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E39C13;
+}

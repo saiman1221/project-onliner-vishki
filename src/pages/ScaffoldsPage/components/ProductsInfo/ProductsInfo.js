@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './ProductsInfo.css';
 
 import img from './images/slider_img1.svg';

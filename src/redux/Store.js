@@ -301,8 +301,58 @@ export const store = {
                     ['Кронштейн крепления', '300-600', '0,42'],
                     ['Ригель', '3060', '6,5'],
                     ['Настил деревянный', '1000*1000', '20']
-                ]
+                ],
             },
+            'carousel' : [
+                {
+                    'title' : 'Рама без лестницы',
+                    'img' : 'frame_without_ladder.jpg',
+                    'size' : '1060*2000',
+                    'weight' : '7,4'
+                },
+                {
+                    'title' : 'Рама с лестницей',
+                    'img' : 'frame_with_ladder.png',
+                    'size' : '1060*2000',
+                    'weight' : '9,4'
+                },
+                {
+                    'title' : 'Горизонтальная стяжка',
+                    'img' : 'horizontal_screed.JPG',
+                    'size' : '3050',
+                    'weight' : '1,7'
+                },
+                {
+                    'title' : 'Диагональная стяжка',
+                    'img' : 'diagonal_screed.jpg',
+                    'size' : '3300',
+                    'weight' : '3,65'
+                },
+                {
+                    'title' : 'Башмак',
+                    'img' : 'shoe.JPG',
+                    'size' : '100*100*160',
+                    'weight' : '0,41'
+                },
+                {
+                    'title' : 'Кронштейн крепления',
+                    'img' : 'mounting_bracket.jpg',
+                    'size' : '300-600',
+                    'weight' : '0,42'
+                },
+                {
+                    'title' : 'Ригель',
+                    'img' : 'rigel.jpeg',
+                    'size' : '3060',
+                    'weight' : '6,5'
+                },
+                {
+                    'title' : 'Настил деревянный',
+                    'img' : 'wooden_flooring.JPG',
+                    'size' : '1000*1000',
+                    'weight' : '20'
+                }
+            ],
             'manual': {
                 'page_name': 'scaffoldings',
                 'title': 'Инструкция по сборке лесов',
