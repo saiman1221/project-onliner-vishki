@@ -20,9 +20,30 @@
 }
 
 .MyCarousel .carousel__dots__group .carousel__dot{
+    min-width: 10px;
+    max-width: 10px;
     width: 10px;
+    min-height: 10px;
+    max-height: 10px;
     height: 10px;
+    border-radius: 50%;
+    border: 1px solid #E39C13;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyCarousel .carousel__dots__group .carousel__dot .carousel__dot_selected{
+    width: 70%;
+    height: 70%;
+    background-color: #E39C13;
     border: none;
     border-radius: 50%;
-    background-color: #E39C13;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.MyCarousel .carousel__dots__group .carousel__dot.dot__selected .carousel__dot_selected{
+    opacity: 1;
 }

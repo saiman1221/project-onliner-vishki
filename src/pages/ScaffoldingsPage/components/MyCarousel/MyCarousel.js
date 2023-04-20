@@ -1,14 +1,29 @@
 import React, {useState} from 'react';
 import './MyCarousel.css'
 import { CarouselCard } from "../CarouselCard/CarouselCard";
-import {CarouselProvider, Slider, Slide, Dot, DotGroup, ButtonBack, ButtonNext} from 'pure-react-carousel';
+import {CarouselProvider, Slider, Slide, Dot} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const cardsRender = (cards) => {
-    return cards.map((card, id) => <Slide index={id}><CarouselCard cardData={card}/></Slide>)
-}
-
 export const MyCarousel = (props) => {
+    const [visibleSlides] = useState(4)
+    const [selectedDotClassName, setSelectedDotClassName] = useState('select__dot__0')
+    const cardsRender = (cards) => {
+        return cards.map((card, id) => <Slide index={id}><CarouselCard cardData={card}/></Slide>)
+    }
+
+    const dotsRender = (cards) => {
+        return cards.map((card, id) => {
+            if(id <= cards.length - visibleSlides){
+                return (
+                    <Dot slide={id} className={selectedDotClassName === ('select__dot__' + id) ? 'carousel__dot dot__selected' : 'carousel__dot'} disabled={false} onClick={() => {setSelectedDotClassName('select__dot__' + id)}}>
+                        <div className={'carousel__dot_selected'}></div>
+                    </Dot>
+                )
+            }
+            else return null;
+        })
+    }
+
     return (
         <div className={'MyCarousel container'}>
             <h2 className={'MyCarousel__title'}>
@@ -22,18 +37,14 @@ export const MyCarousel = (props) => {
                 naturalSlideWidth={10}
                 naturalSlideHeight={15}
                 totalSlides={props.content.length}
-                visibleSlides={4}
+                visibleSlides={visibleSlides}
                 infinite={true}
             >
                 <Slider>
                     {cardsRender(props.content)}
                 </Slider>
                 <div className="carousel__dots__group">
-                    <Dot slide={0} className={'carousel__dot'} disabled={false}/>
-                    <Dot slide={1} className={'carousel__dot'} disabled={false}/>
-                    <Dot slide={2} className={'carousel__dot'} disabled={false}/>
-                    <Dot slide={3} className={'carousel__dot'} disabled={false}/>
-                    <Dot slide={4} className={'carousel__dot'} disabled={false}/>
+                    {dotsRender(props.content)}
                 </div>
             </CarouselProvider>
         </div>

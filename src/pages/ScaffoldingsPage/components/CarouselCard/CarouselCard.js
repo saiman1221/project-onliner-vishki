@@ -8,8 +8,14 @@ export const CarouselCard = ({cardData}) => {
             <div className={'CarouselCard__image'}>
                 <img src={require(`/src/assets/images/scaffoldings_page/carousel/${cardData.img}`)} alt="Фото элемента"/>
             </div>
-            <p>Размер элемента: {cardData.size} мм</p>
-            <p>Масса элемента: {cardData.weight} кг</p>
+            <div className={'CarouselCard__properties'}>
+                <p className={'CarouselCard__text'}>Размер элемента:</p>
+                <p className={'CarouselCard__text orange'}>{cardData.size} мм</p>
+            </div>
+            <div className={'CarouselCard__properties'}>
+                <p className={'CarouselCard__text'}>Масса элемента:</p>
+                <p className={'CarouselCard__text orange'}>{cardData.weight} кг</p>
+            </div>
         </div>
     );
 }
