@@ -1,4 +1,4 @@
-.First_screen{
+.first_screen {
     height: 110vh;
     width: 100%;
     background-image: url("images/background_towers.png");
@@ -7,21 +7,22 @@
     background-size: cover;
 }
 
-/*-------- Styles for background photo --------*/
-.First_screen.towers{
+/*-------- Styles for background photo for all pages --------*/
+.first_screen.towers {
     background-image: url("images/background_towers.png");
 }
-.First_screen.scaffoldings{
+.first_screen.scaffoldings {
     background-image: url("images/background_scaffoldings.png");
 }
-.First_screen.stairs{
+.first_screen.stairs {
     background-image: url("images/background_stairs.png");
 }
-.First_screen.scaffolds{
+.first_screen.scaffolds {
     background-image: url("images/background_scaffolds.png");
 }
 
-.First_screen > .layout{
+/*-------- Styles for content --------*/
+.first_screen > .layout {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -29,13 +30,13 @@
     justify-content: space-between;
 }
 
-.First_screen > .layout > .header{
+.first_screen > .layout > .header {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.First_screen > .layout > .content > h1{
+.first_screen > .layout > .content > h1 {
     font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +47,7 @@
     width: 730px;
 }
 
-.First_screen > .layout > .content > p{
+.first_screen > .layout > .content > p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -56,7 +57,7 @@
     margin-bottom: 48px;
 }
 
-.First_screen > .layout > .content > .button{
+.first_screen > .layout > .content > .button {
     background: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -75,7 +76,7 @@
     overflow: hidden;
 }
 
-.First_screen > .layout > .content > .button:before{
+.first_screen > .layout > .content > .button:before {
     content: '';
     position: absolute;
     top: -100%;
@@ -88,41 +89,58 @@
     transition: 0.4s;
 }
 
-.First_screen > .layout > .content > .button:hover:before{
+.first_screen > .layout > .content > .button:hover:before {
     transform: rotateZ(180deg);
 }
 
-.First_screen.towers > .layout > .header .First_header{
+/*-------- Styles for header for all pages --------*/
+.first_screen.towers > .layout > .header .First_header {
     background: rgba(41, 66, 87, 0.78);
 }
-.First_screen.scaffoldings > .layout > .header .First_header{
+.first_screen.scaffoldings > .layout > .header .First_header {
     background: rgba(15, 25, 38, 0.5);
 }
-.First_screen.stairs > .layout > .header .First_header{
+.first_screen.stairs > .layout > .header .First_header {
     background: rgba(15, 25, 38, 0.5);
 }
-.First_screen.scaffolds > .layout > .header .First_header{
+.first_screen.scaffolds > .layout > .header .First_header {
     background: rgba(15, 25, 38, 0.7);
 }
 
-.First_screen.towers > .layout > .header .First_header__mobil, .First_screen.scaffoldings > .layout > .header .First_header__mobil, .First_screen.stairs > .layout > .header .First_header__mobil, .First_screen.scaffolds > .layout > .header .First_header__mobil{
-    background: rgba(0,0,0,0);
+.first_screen.towers > .layout > .header .First_header__mobil,
+.first_screen.scaffoldings > .layout > .header .First_header__mobil,
+.first_screen.stairs > .layout > .header .First_header__mobil,
+.first_screen.scaffolds > .layout > .header .First_header__mobil {
+    background: rgba(0, 0, 0, 0);
 }
 
-.First_screen.towers > .layout > .header .First_header.fixed, .First_screen.towers > .layout > .header .First_header__mobil.fixed{
-    background:  rgba(41, 66, 87, 1);
+.first_screen.towers > .layout > .header .First_header.fixed, .first_screen.towers > .layout > .header .First_header__mobil.fixed {
+    background: rgba(41, 66, 87, 1);
 }
-.First_screen.scaffoldings > .layout > .header .First_header.fixed, .First_screen.scaffoldings > .layout > .header .First_header__mobil.fixed{
+.first_screen.scaffoldings > .layout > .header .First_header.fixed, .first_screen.scaffoldings > .layout > .header .First_header__mobil.fixed {
     background: rgba(15, 25, 38, 1);
 }
-.First_screen.stairs > .layout > .header .First_header.fixed, .First_screen.stairs > .layout > .header .First_header__mobil.fixed{
+.first_screen.stairs > .layout > .header .First_header.fixed, .first_screen.stairs > .layout > .header .First_header__mobil.fixed {
     background: rgba(15, 25, 38, 1);
 }
-.First_screen.scaffolds > .layout > .header .First_header.fixed, .First_screen.scaffolds > .layout > .header .First_header__mobil.fixed{
+.first_screen.scaffolds > .layout > .header .First_header.fixed, .first_screen.scaffolds > .layout > .header .First_header__mobil.fixed {
     background: rgba(15, 25, 38, 1);
 }
 
-.nomatch_button{
+.nomatch_button {
     display: none;
     text-decoration: none;
 }
+
+/*-------- Adaptive styles for content for all pages --------*/
+@media (max-width: 1200px) {
+    .first_screen > .content {
+        align-items: center;
+    }
+
+    .first_screen > .content > h1 {
+        width: 80%;
+        text-align: center;
+    }
+}
+

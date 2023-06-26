@@ -7,6 +7,11 @@ import {ScaffoldingsPage} from "./pages/ScaffoldingsPage/ScaffoldingsPage";
 import {StairsPage} from "./pages/StairsPage/StairsPage";
 import {NoMatch} from "./pages/NoMatch/NoMatch";
 
+
+
+
+import {MyWorker} from "./common_components/MyWorker/MyWorker";
+
 export function App(props) {
     return (
         <div className="App">
@@ -14,9 +19,12 @@ export function App(props) {
                 <Routes>
                     <Route path={'/'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
                     <Route path={'/towers'} element={<TowersPage pageContent={props.store.pagesContent.towers}/>}/>
-                    <Route path={'/scaffoldings'} element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
-                    <Route path={'/scaffolds'} element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
+                    <Route path={'/scaffoldings'}
+                           element={<ScaffoldingsPage pageContent={props.store.pagesContent.scaffoldings}/>}/>
+                    <Route path={'/scaffolds'}
+                           element={<ScaffoldsPage pageContent={props.store.pagesContent.scaffolds}/>}/>
                     <Route path={'/stairs'} element={<StairsPage pageContent={props.store.pagesContent.stairs}/>}/>
+                    <Route path={'/assets/:fileToImport'} element={<MyWorker/>}/>
                     <Route path={'*'} element={<NoMatch pageContent={props.store.pagesContent.nomatch}/>}/>
                 </Routes>
             </BrowserRouter>

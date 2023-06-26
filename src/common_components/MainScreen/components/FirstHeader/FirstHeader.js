@@ -1,7 +1,9 @@
 import React, {useEffect} from "react";
-import './FirstHeader.css';
-import logo from './images/logoMin.svg';
 import {NavLink} from "react-router-dom";
+
+import logo from './images/logoMin.svg';
+
+import './FirstHeader.scss';
 
 export const FirstHeader = (props) => {
     let header = React.createRef();
@@ -24,7 +26,7 @@ export const FirstHeader = (props) => {
     })
 
     return (
-        <header className="First_header" ref={header}>
+        <header className={`First_header ${props.page}`} ref={header}>
             <div className='display container'>
                 <NavLink to={'/'} className={'logo'} onClick={()=>{window.scrollTo(0,0)}}>
                     <img src={logo} alt="Логотип"/>

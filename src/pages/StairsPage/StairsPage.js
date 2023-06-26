@@ -13,6 +13,7 @@ import {Form} from "../../common_components/Form/Form";
 import {Footer} from "../../common_components/Footer/Footer";
 import {YandexMaps} from "../../common_components/YandexMaps/YandexMaps";
 import {Questions} from "../TowersPage/components/Questions/Questions";
+import {LinksBar} from "../../common_components/LinksBar/LinksBar";
 
 export function StairsPage(props) {
     const [modalActive, setModalActive] = useState(false);
@@ -29,11 +30,19 @@ export function StairsPage(props) {
     return (
         <div className="StairsPage">
             <FirstScreen content={props.pageContent.first_screen} modal={setModalActive}/>
-            <div className={'Products container'}>
-                {props.pageContent.products.map(el => <Products content={el} setModalActive={setModalActive}/>)}
+            {/*Якорь*/}
+            <div id={'stairs_prices'} style={anchor}/>
+            <div className={'container'}>
+                <div className={'Products'}>
+                    {props.pageContent.products.map(el => <Products content={el} setModalActive={setModalActive}/>)}
+                </div>
+                <p className={'Products_price_condition'}>* Минимальная сумма для заключения договора - 20 рублей.</p>
             </div>
-            {props.pageContent.stairs_data.map((el, index) => <><div id={'stairs_product_' + (index + 1)} style={anchor}/><Parameters content={el} photo={images[index]}/></>)}
+            <div className={'products_parameters'}>
+                {props.pageContent.stairs_data.map((el, index) => <div className={'products_parameters_item'}><div id={'stairs_product_' + (index + 1)} style={anchor}/><Parameters content={el} photo={images[index]}/></div>)}
+            </div>
             <Form/>
+            <LinksBar content={props.pageContent.first_screen}/>
             <Questions content={props.pageContent.questions}/>
             {/*Якорь*/}
             <div id={'stairs_contacts'} style={anchor}/>

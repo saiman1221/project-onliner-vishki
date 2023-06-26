@@ -1,0 +1,200 @@
+.first_screen {
+  height: 110vh;
+  width: 100%;
+  background-image: url("images/background_towers.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .layout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      .title {
+        font-family: 'Jura', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 71px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        width: 730px;
+      }
+
+      .text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-bottom: 48px;
+      }
+
+      .button {
+        background: none;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        padding: 18px 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #252525;
+        cursor: pointer;
+        border: none;
+        transition: 0.4s;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -100%;
+          left: -50%;
+          width: 200%;
+          height: 400%;
+          background: linear-gradient(93deg, #F6D365 0%, #EE9A38 100%);
+          z-index: -1;
+          border-radius: 50px;
+          transition: 0.4s;
+        }
+
+        &:hover:before {
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+  }
+}
+
+///*-------- Styles for background photo for all pages --------*/
+.first_screen.towers {
+  background-image: url("images/background_towers.png");
+}
+.first_screen.scaffoldings {
+  background-image: url("images/background_scaffoldings.png");
+}
+.first_screen.stairs {
+  background-image: url("images/background_stairs.png");
+}
+.first_screen.scaffolds {
+  background-image: url("images/background_scaffolds.png");
+}
+
+.nomatch_button {
+  display: none;
+  text-decoration: none;
+}
+
+///*-------- Adaptive styles for content for all pages --------*/
+@media (max-width: 1200px) {
+  .first_screen{
+    .content {
+      align-items: center;
+
+      h1 {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .First_header {
+    display: none;
+  }
+
+  .App .First_header__mobil {
+    display: flex;
+  }
+
+  .App .Second_header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .App .First_header {
+    display: none;
+  }
+
+  .App .Mobil_menu {
+    width: 70%;
+  }
+
+  .App .first_screen > .layout > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App .first_screen > .layout > .content h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    line-height: 110%;
+    margin-bottom: 40px;
+  }
+
+  .App .first_screen > .layout > .content p {
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .App .first_screen > .layout > .content button {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .App .first_screen > .layout > .content {
+    align-items: flex-start;
+  }
+
+  .App .first_screen > .layout > .content > h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .App .first_screen > .layout > .content > p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 450px) {
+  .App .first_screen > .layout > .content {
+    align-items: center;
+    padding-top: 90px;
+  }
+
+  .App .first_screen > .layout > .content > h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .App .first_screen > .layout > .content > p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

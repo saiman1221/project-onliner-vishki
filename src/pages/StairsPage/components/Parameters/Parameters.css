@@ -4,13 +4,25 @@
     color: #000000;
 }
 
-.Parameters h3{
+.Parameters .block_title{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.Parameters .block_title h3{
     font-size: 30px;
     font-weight: 600;
     line-height: 37px;
-
     text-transform: initial;
     margin-bottom: 30px;
+}
+.Parameters .block_title a{
+    font-weight: 600;
+    line-height: 37px;
+    text-transform: initial;
+    margin-bottom: 30px;
+
 }
 
 .Parameters ul{

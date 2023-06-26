@@ -1,9 +1,19 @@
-.StairsPage .Parameters:nth-child(2n) .characteristics{
+.StairsPage .products_parameters .products_parameters_item:nth-child(2n) .Parameters .characteristics{
     flex-direction: row-reverse;
 }
 
-.Products {
+.StairsPage .Products {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+}
+
+.StairsPage .Products_price_condition{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: red;
+    background: transparent;
+    margin-bottom: 100px;
 }

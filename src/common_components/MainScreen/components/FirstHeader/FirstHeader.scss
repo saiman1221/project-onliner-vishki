@@ -1,0 +1,117 @@
+///*-------- Common styles for header --------*/
+.First_header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.4s;
+
+    .display{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 80px;
+            cursor: pointer;
+
+            img{
+                transform: translateY(-12px) scale(1);
+                transition: 0.2s;
+            }
+
+            p{
+                width: 100%;
+                position: absolute;
+                top: calc(100% - 19px);
+                left: 0;
+                font-family: 'Jura', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #D6D6D6;
+                opacity: 1;
+                transform: translateY(12px);
+                transition: 0.2s;
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 50px;
+
+            a{
+                font-family: 'Jura', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+
+            a:hover{
+                color: #E39C13;
+            }
+        }
+    }
+}
+
+///*-------- Styles for header for all pages --------*/
+.First_header.towers {
+    background: rgba(41, 66, 87, 0.78);
+}
+.First_header.scaffoldings {
+    background: rgba(15, 25, 38, 0.5);
+}
+.First_header.stairs {
+    background: rgba(15, 25, 38, 0.5);
+}
+.First_header.scaffolds {
+    background: rgba(15, 25, 38, 0.7);
+}
+
+.First_header__mobil.towers,
+.First_header__mobil.scaffoldings,
+.First_header__mobil.stairs,
+.First_header__mobil.scaffolds {
+    background: transparent;
+}
+
+.First_header.fixed.towers, .First_header__mobil.fixed.towers {
+    background: rgba(41, 66, 87, 1);
+}
+.First_header.fixed.scaffoldings, .First_header__mobil.fixed.scaffoldings {
+    background: rgba(15, 25, 38, 1);
+}
+.First_header.fixed.stairs, .First_header__mobil.fixed.stairs {
+    background: rgba(15, 25, 38, 1);
+}
+.First_header.fixed.scaffolds, .First_header__mobil.fixed.scaffolds {
+    background: rgba(15, 25, 38, 1);
+}
+
+/*-------- Styles for fixed header --------*/
+.First_header.fixed {
+    .logo {
+        img {
+            transform: translateY(0) scale(0.8);
+        }
+
+        p{
+            opacity: 0;
+            transform: translateY(0);
+        }
+    }
+}
+
+

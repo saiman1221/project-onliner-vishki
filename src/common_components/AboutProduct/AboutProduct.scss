@@ -1,0 +1,55 @@
+.about_product {
+    margin: -35px auto 100px auto;
+    padding: 70px 50px;
+    background: #FFFFFF;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.05));
+    border: none;
+    border-radius: 14px;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .part {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .title {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                color: #000000;
+            }
+
+            img, .list{
+                width: 416px;
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding-left: 30px;
+
+                .list_item {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+        }
+
+        .title_mobile {
+            display: none;
+        }
+    }
+}

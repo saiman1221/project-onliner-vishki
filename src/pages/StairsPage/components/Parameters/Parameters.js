@@ -1,12 +1,13 @@
 import React from "react"
 import './Parameters.css'
 import {Table} from "../../../../common_components/Table/Table";
+import {NavLink} from "react-router-dom";
 
 export function Parameters(props) {
     return (
         <div className="Parameters">
             <div className={'container'}>
-                <h3>{props.content.title}</h3>
+                <div className={'block_title'}><h3>{props.content.title}</h3><NavLink target={'_blank'} to={`../assets/${props.content.passportUrl}`} className={'item'}>Паспорт</NavLink></div>
                 <ul>{props.content.list.map(el => <li>{el}</li>)}</ul>
             </div>
             <img src={props.photo} className={'display_mobil'} alt="Фото лестницы"/>
@@ -17,13 +18,14 @@ export function Parameters(props) {
                 </div>
                 <img src={props.photo} alt="Фото лестницы"/>
             </div>
-            <div className={'title'}><div/><h4>Стоимость</h4><div/></div>
-            <div className={'prices container'}>
-                <div className={'content'}>
-                    <Table content={props.content.pricesTable}/>
-                    <p>* Минимальная сумма для заключения договора - 20 рублей.</p>
-                </div>
-            </div>
+            <br/><br/>
+            {/*<div className={'title'}><div/><h4>Стоимость</h4><div/></div>*/}
+            {/*<div className={'prices container'}>*/}
+            {/*    <div className={'content'}>*/}
+            {/*        <Table content={props.content.pricesTable}/>*/}
+            {/*        <p>* Минимальная сумма для заключения договора - 20 рублей.</p>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 }
