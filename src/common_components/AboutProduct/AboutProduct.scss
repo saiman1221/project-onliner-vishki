@@ -27,8 +27,8 @@
                 color: #000000;
             }
 
-            img, .list{
-                width: 416px;
+            .list, img {
+                //width: 416px;
             }
 
             .list {
@@ -48,7 +48,7 @@
             }
         }
 
-        .title_mobile {
+        .part.title_mobile {
             display: none;
         }
     }

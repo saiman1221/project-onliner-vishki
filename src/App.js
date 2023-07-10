@@ -6,10 +6,6 @@ import {ScaffoldsPage} from "./pages/ScaffoldsPage/ScaffoldsPage";
 import {ScaffoldingsPage} from "./pages/ScaffoldingsPage/ScaffoldingsPage";
 import {StairsPage} from "./pages/StairsPage/StairsPage";
 import {NoMatch} from "./pages/NoMatch/NoMatch";
-
-
-
-
 import {MyWorker} from "./common_components/MyWorker/MyWorker";
 
 export function App(props) {

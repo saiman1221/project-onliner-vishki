@@ -14,11 +14,11 @@ export const AboutProduct = (props) => {
     return (
         <div className={'about_product container'}>
             <div className={'content'}>
-                <div className={"part title_mobile"}>
+                <div className={'part title_mobile'}>
                     <h2 className={'title'}>{props.content.title}</h2>
                 </div>
-                <div className={"part"}>
-                    <img src={images[props.content.img]} alt="Изображение"/>
+                <div className={'part'}>
+                    <img src={images[props.content.img]} alt={'Изображение'}/>
                 </div>
                 <div className={'part'}>
                     <h2 className={'title title_desktop'}>{props.content.title}</h2>
